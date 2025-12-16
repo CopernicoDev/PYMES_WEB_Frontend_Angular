@@ -1,12 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {Home} from './home/home';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Home],
   templateUrl: './app.html',
-  styleUrl: './app.css',
-  template: '<h1>ITSup<h1>',
+  styleUrls: ['./app.css'],
+            
+
 })
 export class App {
   title = signal('ITSup');
