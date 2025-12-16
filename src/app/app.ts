@@ -5,8 +5,9 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  template: '<h1>ITSup<h1>',
 })
 export class App {
-  protected readonly title = signal('PYMES_WEB_Frontend_Angular');
+  title = signal('ITSup');
 }
