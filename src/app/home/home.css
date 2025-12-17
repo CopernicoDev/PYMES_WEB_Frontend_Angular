@@ -1,0 +1,255 @@
+body{
+    background-color: #464542;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.barra-superior {
+    background-color: #464542; /* Color de fondo del rectángulo */
+    color: #fff; /* Color del texto dentro del rectángulo */
+    margin: auto;
+    padding: 10px;
+    margin-top: 40px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); /* Sombra blanca */
+    height: 2cm;
+    width: 26cm;
+}
+
+.barra-superior nav ul {
+    list-style-type: none; /* Quita los marcadores de lista */
+    padding: 0; /* Elimina el espacio interno de la lista */
+}
+
+.barra-superior nav ul li {
+    display: inline; /* Muestra los elementos de lista en línea */
+    margin-right: 10px; /* Espacio entre los elementos de lista */
+}
+
+
+.rectangulo-negro{
+    background-color: black;
+    padding: 15px 30px;
+    
+}
+
+.rectangulo-gris{
+    border: 1px solid black; /* Ancho, estilo y color del borde */
+    padding: 14px 30px; /* Ajusta según tus necesidades */
+    margin-left: -15px;
+    
+}
+
+.Elemnto-barra1{
+    font-size: 200%;
+    position: relative;
+    top: 0px;
+    left: 5%;
+    font-weight: 900;
+}
+
+.Elemnto-barra2{
+    position: relative;
+    top: -5px;
+    left: 20%;
+}
+
+.Elemnto-barra3{
+    position: relative;
+    top: -5px;
+    left: 40%;
+}
+
+
+
+.Cuadro-registro-login{
+    position: relative;
+    left: 77%;
+    top: -25px;
+}
+
+.reactangulo-negro-encabezado{
+    background-color: #1a1a19;
+    width: 390px; /* Especifica el ancho del rectángulo */
+    height: 230px; /* Especifica la altura del rectángulo */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    position: relative;
+    left: 55%;
+    bottom: 5cm;
+    
+}
+
+h3{
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: x-large;
+}
+
+.maquetación-encabezado{
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: large;
+    color: #fff;
+    display: grid;
+    position: relative;
+    left: 20%;
+    top: 5px;
+    width: 400px;
+    height: 200px;
+    font-size: xx-large;   
+}
+
+.Titulo-encabezado{
+    position: relative;
+    bottom: 25px;
+}
+
+.Titulo-encabezado2{
+    font-size: x-large;
+    word-spacing: normal;
+    display: grid;
+    position: relative;
+    top: -70px;
+
+}
+
+
+.rectangulo-gris2{
+    align-items: center;
+    display: grid;
+    margin: auto;
+    position: relative;
+    top: -50px;
+    background-color: #969592;
+    color: black; 
+    width: 350px; /* Especifica el ancho del rectángulo */
+    height: 45px; /* Especifica la altura del rectángulo */
+    font-size: medium;
+    font-weight: bold;
+}    
+
+
+h1{
+    text-align: center;
+}
+
+main{
+    background-color: #1a1a19;
+    margin: 0px; /* Elimina los márgenes predeterminados del cuerpo y la página */
+    padding: 0px; /* Elimina el relleno predeterminado del cuerpo y la página */
+    height: 100cqmax;
+    width: 100cqmax;
+}
+
+
+.Titulo-main{
+    color: #fff;
+    display: grid;
+    padding-top: 45px;
+    font-size: larger;
+}
+
+.Subtitulo-main{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.Pequeño-titulo-main{
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+    display: grid;
+    position: relative;
+    bottom: 30px;
+}
+
+.bloque-gris-main{
+    background-color:#464542 ; /* Color de fondo del bloque dentro del fondo */
+    position: relative; /* Establece la posición absoluta */
+    width: 17cm;
+    height: 10cm;
+    left: 35%;
+    top: 60px;
+}
+
+main h4 {
+    color: #fff;
+    text-align: left;
+    font-size: larger;
+    position: relative;
+    left: 15%;
+    top: 105px;
+}
+
+main h5 {
+    color: #fff;
+    text-align: left;
+    font-size: 3rem;
+    position: relative;
+    left: 15%;
+    top: 2cm;
+    width: 12cm;
+}
+
+main p{
+    color: #fff;
+    text-align: left;
+    font-size: x-large;
+    position: relative;
+    left: 15%;
+    top: 25px;
+    width: 12cm;
+    word-spacing: 5px;
+    
+}
+
+.bloque-gris-main2{
+    background-color:#464542 ; /* Color de fondo del bloque dentro del fondo */
+    position: relative; /* Establece la posición absoluta */
+    width: 11cm;
+    height: 9cm;
+    left: 50%;
+    bottom: 8.60cm;
+    
+
+}
+
+
+main h6{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    bottom: 25%
+}
+
+.Bloque-infraestructura{
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    display: grid;
+    margin: auto;
+    background-color: #969592 ;
+    width: 13cm; /* Especifica el ancho del rectángulo */
+    height: 45px; /* Especifica la altura del rectángulo */
+    position: relative;
+    bottom: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
