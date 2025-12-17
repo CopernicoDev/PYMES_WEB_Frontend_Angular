@@ -9,11 +9,14 @@ body{
     background-color: #464542; /* Color de fondo del rectángulo */
     color: #fff; /* Color del texto dentro del rectángulo */
     margin: auto;
-    padding: 10px;
+    padding: auto;
     margin-top: 40px;
+    width: 30cm; /* Ancho completo */
+    height: 3cm; /* Altura del rectángulo */
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); /* Sombra blanca */
-    height: 2cm;
-    width: 26cm;
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: baseline; /* Centra horizontalmente los elementos */
 }
 
 .barra-superior nav ul {
@@ -23,7 +26,6 @@ body{
 
 .barra-superior nav ul li {
     display: inline; /* Muestra los elementos de lista en línea */
-    margin-right: 10px; /* Espacio entre los elementos de lista */
 }
 
 
@@ -41,35 +43,35 @@ body{
 }
 
 .Elemnto-barra1{
-    font-size: 200%;
-    position: relative;
-    top: 0px;
-    left: 5%;
-    font-weight: 900;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 35px;
 }
 
 .Elemnto-barra2{
-    position: relative;
-    top: -5px;
-    left: 20%;
     font-size: x-large;
+    font-weight: bold;
+    margin-left: 200px;
+
+    
 }
 
 .Elemnto-barra3{
-    position: relative;
-    top: -5px;
-    left: 35%;
     font-size: x-large;
+    font-weight: bold;
+    margin-left: 150px;
+    
 }
 
 
 
 .Cuadro-registro-login{
-    position: relative;
-    left: 77%;
-    top: -25px;
     font-weight: bold;
+    margin-left: 230px;
+    
 }
+
+
 
 .reactangulo-negro-encabezado{
     background-color: #1a1a19;
