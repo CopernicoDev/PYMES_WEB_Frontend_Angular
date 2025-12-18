@@ -88,6 +88,7 @@ h1{
     color:  #fff;
     text-align: center;
     margin-top: 100px;
+    font-weight: normal;
     
 }
 
@@ -97,12 +98,45 @@ h2 .bg{
     align-items: center; /* centra verticalmente */
     justify-content: center; /* centra horizontalmente */
     color: #fff;
+   
     width: 500px;
     height: 300px;
     text-align: center;
     padding: 0 1rem;
     box-sizing: border-box;
     margin-left: 510px;
+}
+
+h3 .bg{
+    font-size: xx-large;
+    font-weight: normal;
+    display: inline-flex; /* permite centrar en ambas direcciones */
+    align-items: center; /* centra verticalmente */
+    justify-content: center; /* centra horizontalmente */
+    color: #fff;
+    
+    width: 700px;
+    height: 200px;
+    text-align: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin-left: 420px;
+
+}
+
+h3 {
+    margin-top: -150px;
+}
+
+.reactangulo-negro-encabezado{
+    background-color: #1a1a19;
+    width: 590px; /* Especifica el ancho del rectángulo */
+    height: 350px; /* Especifica la altura del rectángulo */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    position: relative;
+    left: 50%;
+    bottom: 8cm;
+    
 }
 
 
