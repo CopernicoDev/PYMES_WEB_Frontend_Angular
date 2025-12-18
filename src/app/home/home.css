@@ -91,6 +91,20 @@ h1{
     
 }
 
+h2 .bg{
+    font-size: 40px;
+    display: inline-flex; /* permite centrar en ambas direcciones */
+    align-items: center; /* centra verticalmente */
+    justify-content: center; /* centra horizontalmente */
+    color: #fff;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin-left: 510px;
+}
+
 
 
 
