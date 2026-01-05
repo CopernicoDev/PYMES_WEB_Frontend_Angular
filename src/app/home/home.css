@@ -98,7 +98,6 @@ h2 .bg{
     align-items: center; /* centra verticalmente */
     justify-content: center; /* centra horizontalmente */
     color: #fff;
-   
     width: 500px;
     height: 300px;
     text-align: center;
@@ -114,7 +113,6 @@ h3 .bg{
     align-items: center; /* centra verticalmente */
     justify-content: center; /* centra horizontalmente */
     color: #fff;
-    
     width: 700px;
     height: 200px;
     text-align: center;
@@ -157,12 +155,34 @@ h3 {
 
 .información-empresa{
     background-color: #1a1a19;
+    margin: 0px; /* Elimina los márgenes predeterminados del cuerpo y la página */
+    padding: 0px; /* Elimina el relleno predeterminado del cuerpo y la página */
+    height: 100cqmax;
+    width: 100cqmax;
 }
 
+.titulo-información{
+    color: #fff;
+    font-weight: bold;
+    padding-top: 50px;
+    font-size: xx-large;
+}
 
+.sub-información{
+    color: #fff;
+    font-weight: semi-bold;
+    text-align: center;
+    font-size: 50px;
+    
+}
 
-
-
+.Pequeño-titulo-main{
+    color: #fff;
+    text-align: center;
+    font-size: x-large;
+    position: relative;
+    top: 125px;
+}
 
 
 
