@@ -139,6 +139,25 @@ h3 {
     
 }
 
+.rectangulo-empieza-ahora{
+    background-color: #9c9c9c;
+    display: inline-flex; /* permite centrar en ambas direcciones */
+    align-items: center; /* centra verticalmente */
+    justify-content: center; /* centra horizontalmente */
+    color: #1a1a19;
+    border: 1px solid black; /* Ancho, estilo y color del borde */
+    font-weight: bold;
+    font-size: larger;
+    width: 425px;
+    height: 50px;
+    margin-left: 550px;
+    position: relative;
+    bottom: 325px;
+}
+
+.información-empresa{
+    background-color: #1a1a19;
+}
 
 
 
