@@ -184,6 +184,23 @@ h3 {
     top: 125px;
 }
 
+.bloque-gris-main {
+  background-color: #464542;
+  width: 800px;
+  height: 500px;
+  display: block;                   /* asegurarse que sea elemento de bloque */
+  margin: 250px 550px 0 auto;         /* arriba 20px, derecha 30px, abajo 0, left auto → alinea a la derecha */
+}
+
+h4{
+    color: #fff;
+    font-size: xx-large;
+    display: inline-flex; /* permite centrar en ambas direcciones */
+    justify-content: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
 
 
 
