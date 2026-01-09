@@ -155,10 +155,8 @@ h3 {
 
 .información-empresa{
     background-color: #1a1a19;
-    margin: 0px; /* Elimina los márgenes predeterminados del cuerpo y la página */
-    padding: 0px; /* Elimina el relleno predeterminado del cuerpo y la página */
-    height: 100cqmax;
-    width: 100cqmax;
+    padding-bottom: 150px;
+    
 }
 
 .titulo-información{
@@ -216,6 +214,45 @@ p{
     margin-left: 100px;
     margin-top: -40px;
     width: 500px;
+}
+
+.bloque-gris-main2{
+    background-color:#464542 ; /* Color de fondo del bloque dentro del fondo */
+    width: 700px;
+    height: 500px;
+    
+    
+
+}
+
+h6{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -55px;
+}
+
+
+
+
+.Bloque-infraestructura{
+    background-color: #9c9c9c;
+    display: inline-flex; /* permite centrar en ambas direcciones */
+    align-items: center; /* centra verticalmente */
+    justify-content: center; /* centra horizontalmente */
+    color: #1a1a19;
+    border: 1px solid black; /* Ancho, estilo y color del borde */
+    font-weight: bold;
+    font-size: larger;
+    margin: auto;
+    padding: auto;
+    width: 625px;
+    height: 55px;
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: baseline; /* Centra horizontalmente los elementos */
+    
 }
 
 
