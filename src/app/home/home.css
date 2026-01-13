@@ -38,6 +38,7 @@ body{
 .rectangulo-gris{
     border: 1px solid black; /* Ancho, estilo y color del borde */
     padding: 14px 30px; /* Ajusta según tus necesidades */
+    padding-right: 15px;
     margin-left: -15px;
     
 }
@@ -138,7 +139,7 @@ h3 {
 }
 
 .rectangulo-empieza-ahora{
-    background-color: #9c9c9c;
+    background-color: #969592;
     display: inline-flex; /* permite centrar en ambas direcciones */
     align-items: center; /* centra verticalmente */
     justify-content: center; /* centra horizontalmente */
@@ -240,7 +241,7 @@ h6{
 
 
 .Bloque-infraestructura{
-    background-color: #9c9c9c;
+    background-color: #969592;
     display: inline-flex; /* permite centrar en ambas direcciones */
     align-items: center; /* centra verticalmente */
     justify-content: center; /* centra horizontalmente */
