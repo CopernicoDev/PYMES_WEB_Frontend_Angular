@@ -28,7 +28,9 @@ body{
     display: inline; /* Muestra los elementos de lista en línea */
 }
 
-
+.rectangulo-negro, .rectangulo-gris, .Bloque-infraestructura, .rectangulo-empieza-ahora {
+    font-family: inherit !important;
+}
 
 
 .rectangulo-negro {  
