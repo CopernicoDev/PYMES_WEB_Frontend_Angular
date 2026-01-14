@@ -29,19 +29,41 @@ body{
 }
 
 
-.rectangulo-negro{
-    background-color: black;
-    padding: 15px 30px;
+
+
+.rectangulo-negro {  
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #1a1a19;
+    padding: 15px 25px;
+    margin-left: -45px;
+    cursor: pointer;
+    border: 2px solid #1a1a19;
+    box-shadow: none;
+    outline: none;
+    transition: none;
+    animation: none;
     
 }
 
-.rectangulo-gris{
-    border: 1px solid black; /* Ancho, estilo y color del borde */
-    padding: 14px 30px; /* Ajusta según tus necesidades */
-    padding-right: 15px;
-    margin-left: -15px;
-    
+.rectangulo-gris {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: 2px solid #1a1a19;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    transition: none;
+    animation: none;
+
 }
+
+
 
 .Elemnto-barra1{
     font-size: xx-large;
@@ -152,6 +174,7 @@ h3 {
     margin-left: 550px;
     position: relative;
     bottom: 325px;
+    cursor: pointer;
 }
 
 .información-empresa{
@@ -256,8 +279,12 @@ h6{
     display: flex; /* Utiliza flexbox para centrar el contenido */
     align-items: center; /* Centra verticalmente los elementos */
     justify-content: baseline; /* Centra horizontalmente los elementos */
+    cursor: pointer;
     
 }
+
+
+
 
 
 
