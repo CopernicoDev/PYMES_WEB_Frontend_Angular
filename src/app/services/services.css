@@ -1,0 +1,131 @@
+
+
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a19;
+}
+
+
+
+.barra-superior{
+    background-color: #464542; /* Color de fondo del rectángulo */
+    color: #fff; /* Color del texto dentro del rectángulo */
+    width: auto;
+    height: 80px;
+    padding: auto;
+    padding-left: 50px;
+    font-size: larger;
+    margin-bottom: 0;
+}
+
+.barra-superior nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-superior ul {
+    list-style-type: none; /* Quita los marcadores de lista */
+    padding: 0; /* Elimina el espacio interno de la lista */
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.barra-superior nav ul li {
+    margin-right: 100px; /* Espacio entre los elementos de lista */
+}
+
+.derecha {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Centra los elementos verticalmente */
+
+}
+
+.rectangulo{
+    background-color: black;
+    display: block;
+    color: #fff;
+    border: none;
+    height: 35px;
+    width: 120px;
+    font-size: medium; 
+}
+
+.rectangulo a {
+    text-decoration: none;
+    color: inherit; /* Hace que el color del enlace sea el mismo que el del texto circundante */
+}
+
+main{
+    background-color: #1a1a19;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.Contenido p{
+    width: 6cm;
+    padding-left: 30px;
+}
+
+.Contenido button{
+    background-color:black;
+    color: #fff;
+    border: none;
+    height: 35px;
+    width: 120px;
+    font-size: medium;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+.Contenido > div > *:first-child {
+    margin-top: 0;
+}
+
+
+.Contenido2{
+    background-color: #464542;
+    color: #fff;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+    width: 38cm;
+    height: 8cm;
+    position: relative;
+    right: 30px;
+}
+
+
+.Contenido2 hr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #fff; /* Cambia el color según tus necesidades */
+}
+
+
+.Contenido2 p{
+    width: 6cm;
+    text-align: left;
+}
+
+.Contenido2 button{
+    background-color:black;
+    color: #fff;
+    border: none;
+    height: 35px;
+    width: 120px;
+    font-size: medium;
+}
+
+

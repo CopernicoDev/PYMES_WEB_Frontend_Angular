@@ -73,7 +73,11 @@ body{
     margin-left: 35px;
 }
 
-.Elemnto-barra2{
+.Elemnto-barra2 a,
+.Elemnto-barra2 a:visited{    
+    color: inherit;       
+    text-decoration: none;   /* sin subrayado */        /* cursor normal (no mano) */
+    font-weight: inherit;
     font-size: x-large;
     font-weight: bold;
     margin-left: 200px;
