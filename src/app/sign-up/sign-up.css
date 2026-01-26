@@ -28,47 +28,84 @@ body{
     bottom: 25px;
 }
 
+/* Apartado-email: estilo modular y accesible */
 .Apartado-email {
-    border: 2px solid #1a1a19;
-    padding: 10px;
-    display: inline-block;
-    width: auto;
-    height: 2cm;
-    /*background-color: cadetblue;*/
-    text-align: left;
     display: flex;
-    flex-direction: column; /* Places the anchor tags above the input forms */
-    justify-content: flex-start; /* Aligns items vertically to the top */
-    align-items: flex-start; /* Aligns items horizontally to the left */
-    position: relative;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 40rem;       /* evita unidades fijas (cm) */
+    padding: 0.5rem;
+    padding-left: 0.01rem;
+    /*background: #2a2a2a;    /* panel neutro, evita colores llamativos por defecto */
+    /*border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.04);*/
+    position: relative;     /* para iconos absolutos si hace falta */
+    text-align: left;
 }
 
-.Apartado-email form input{
-    background-color: #1a1a19;
-    border: none;
-    border-style: solid;
-    border-color: #464542;
-    border-width: 1px;
-    padding: 5px;
-    padding-left: 10px;
-    height: 45px;
-    width: 15cm;
-    font-size: medium;
-    outline: none;  /*Removes the default outline when focused*/ 
-    margin-top: 10px;
-
-}
-
+/* forma recomendada */
 .Apartado-email form {
-    position: relative;
+    box-sizing: border-box;   /* incluye padding en el ancho */
+    width: 100%;              /* ocupa todo el ancho del contenedor */
+    max-width: 42rem;         /* límite visual (ej. 42rem ≈ 672px) */
+    margin: 0 auto;           /* centra si hay espacio extra */
+    padding: 0 1rem;          /* espacio interior sensible */
 }
 
-.Apartado-email form i {
-    position: absolute;
-    top: 60%;
-    right: 10px;
-    transform: translateY(-50%);
+.Apartado-email label{
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    display: block;
 }
+
+/* Inputs: usar unidades relativas y estilos consistentes */
+.Apartado-email input[type="email"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #1a1a19;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow .12s ease, border-color .12s ease;
+}
+
+/* Placeholder y color del texto */
+.Apartado-email input::placeholder {
+  color: #9f9d9d;
+}
+
+/* Focus visible y accesible */
+.Apartado-email input:focus {
+  border-color: #969592;
+  box-shadow: 0 0 0 4px rgba(150,149,146,0.08);
+}
+
+/* Icono dentro del input (si usas <i> o svg) */
+.Apartado-email .input-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9f9d9d;
+  pointer-events: none;
+}
+
+.Apartado-email .input-wrap { position: relative; }
+.Apartado-email .input-wrap .input-icon {
+  position: absolute;
+  right: 0.95rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9f9d9d;
+  pointer-events: none;
+}
+.Apartado-email .input-wrap input { padding-right: 0rem; }
+
+/* Evitar altura fija */
+.Apartado-email { height: auto; }
 
 .Apartado-contraseña {
     border: 2px solid #1a1a19;

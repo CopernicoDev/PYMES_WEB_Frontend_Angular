@@ -11,16 +11,18 @@
         <h1>Registro</h1>
         <h2>Registrate para acceder a nuestros servicios</h2>
         <div class="Apartado-email">
-            <a>Mail</a>
-            <form action="/registro" method="post" class="Registro-email">
-                <i class="fas fa-envelope"></i> <!-- Este es el icono del sobre -->
-                <input type="email" id="email" name="email" class="email-input" placeholder="email@email.com" required>
+            <form class="Registro-email">
+              <label for="email">Mail</label>
+              <div class="input-wrap">
+                <input id="email" type="email" name="email" placeholder="Introduce tu email" required>
+                <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
+              </div>
             </form>
         </div>
         <div class="Apartado-contraseña">
         <a>Contraseña</a>
         <form action="/registro" method="post">
-            <i class="fas fa-lock"></i> <!-- Este es el icono de la contraseña -->
+            <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
             <input type="password" id="contrasena" name="contrasena" placeholder="Introduce tu contraseña" required>
         </form>
         </div>
