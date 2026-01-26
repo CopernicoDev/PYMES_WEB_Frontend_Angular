@@ -1,0 +1,208 @@
+body{
+    background-color: #1a1a19;
+    overflow-x: hidden;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+.contenedor{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: auto;
+    height: auto;
+    margin-top: 3cm;
+    /*background-color: #464542; */
+}
+.contenedor h1{
+    font-size: 3rem;
+}
+
+
+.contenedor h2{
+    font-size: x-large;
+    position: relative;
+    bottom: 25px;
+}
+
+.Apartado-email {
+    border: 2px solid #1a1a19;
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    height: 2cm;
+    /*background-color: cadetblue;*/
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Places the anchor tags above the input forms */
+    justify-content: flex-start; /* Aligns items vertically to the top */
+    align-items: flex-start; /* Aligns items horizontally to the left */
+    position: relative;
+}
+
+.Apartado-email form input{
+    background-color: #1a1a19;
+    border: none;
+    border-style: solid;
+    border-color: #464542;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 45px;
+    width: 15cm;
+    font-size: medium;
+    outline: none;  /*Removes the default outline when focused*/ 
+    margin-top: 10px;
+
+}
+
+.Apartado-email form {
+    position: relative;
+}
+
+.Apartado-email form i {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.Apartado-contraseña {
+    border: 2px solid #1a1a19;
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    height: 2cm;
+    /*background-color: cadetblue;*/
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Places the anchor tags above the input forms */
+    justify-content: flex-start; /* Aligns items vertically to the top */
+    align-items: flex-start; /* Aligns items horizontally to the left */
+    position: relative;
+}
+
+.Apartado-contraseña form input{
+    background-color: #1a1a19;
+    border: none;
+    border-style: solid;
+    border-color: #464542;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 45px;
+    width: 15cm;
+    font-size: medium;
+    outline: none;  /*Removes the default outline when focused*/ 
+    margin-top: 10px;
+}
+
+.Apartado-contraseña form {
+    position: relative;
+}
+
+
+.Apartado-contraseña form i {
+    position: absolute;
+    top: 60%;
+    right: 10px; /* ajusta este valor según tus necesidades */
+    transform: translateY(-50%);
+}
+
+
+
+input[type="email"] {
+    color: #9f9d9d; /* Cambia el color del texto introducido en una casilla de entrada de correo electrónico */
+}
+
+input[type="password"] {
+    color: #9f9d9d;
+}
+
+.Finalización-registro {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: auto;
+    /*background-color: #464542;*/
+    position: relative;
+    bottom: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.checkbox-container input {
+    margin-right: 5px;
+}
+
+/* Oculta el checkbox original */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Crea un nuevo checkbox */
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:  15px;
+    height: 15px;
+    border:1px solid #242323;
+    box-shadow: 2px 2px 3px rgba(93, 91, 91, 0.3); /* Añade una sombra al checkbox */
+}
+
+/* Estilo cuando el checkbox está marcado */
+input[type="checkbox"]:checked + label:before {
+    content: '✔'; /* Añade un check dentro del checkbox */
+    color: #504f4f; /* Cambia el color del check a blanco */
+    text-align: center; /* Centra el check dentro del checkbox */
+}
+
+
+.boton-registro{
+    margin: auto;
+    background-color: black;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 14.5cm;
+    height: 1cm;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+    position: relative;
+    bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333; /* Cambia el color y el grosor de la línea */
+    width: 50%; /* Cambia el ancho de la línea */
+    margin: auto; /* Centra la línea horizontalmente */
+    margin-top: 20px; /* Ajusta según tus necesidades */
+}
+
+
+
+a {
+    margin-left: 5px;
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hace que el color del enlace sea el mismo que el del texto circundante */
+}

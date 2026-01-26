@@ -32,6 +32,22 @@ body{
     font-family: inherit !important;
 }
 
+.Cuadro-registro-login a:link,
+.Cuadro-registro-login a:visited,
+.Cuadro-registro-login a:hover,
+.Cuadro-registro-login a:active,
+.rectangulo-negro a:link,
+.rectangulo-negro a:visited,
+.rectangulo-negro a:hover,
+.rectangulo-negro a:active,
+.rectangulo-gris a:link,
+.rectangulo-gris a:visited,
+.rectangulo-gris a:hover,
+.rectangulo-gris a:active {
+  color: inherit !important;
+  text-decoration: none;
+}
+
 
 .rectangulo-negro {  
     color: #fff;
@@ -45,8 +61,16 @@ body{
     box-shadow: none;
     outline: none;
     transition: none;
-    animation: none;
-    
+    animation: none;   
+}
+
+.Cuadro-registro-login a,
+.rectangulo-negro a,
+.rectangulo-gris a,
+.Bloque-infraestructura a {
+  text-decoration: none;
+  cursor: pointer; /* usa pointer si quieres indicar clicable */
+  outline: none;
 }
 
 .rectangulo-gris {
