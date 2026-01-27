@@ -20,11 +20,13 @@
             </form>
         </div>
         <div class="Apartado-contraseña">
-        <a>Contraseña</a>
-        <form action="/registro" method="post">
-            <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
-            <input type="password" id="contrasena" name="contrasena" placeholder="Introduce tu contraseña" required>
-        </form>
+            <form action="/registro" method="post" class="Registro-contrasena">
+                <label for="contrasena">Contraseña</label>
+                <div class="input-wrap">
+                    <input id="contrasena" type="password" name="contrasena" placeholder="Introduce tu contraseña" required>
+                    <i class="fas fa-lock input-icon" aria-hidden="true"></i>
+                </div>
+            </form>
         </div>
         <div class="Finalización-registro">
             <div class="checkbox-container">
@@ -33,7 +35,7 @@
             </div>
             <p>¿Olvidaste tu contraseña?</p>
         </div>
-        <div class="boton-registro">
+        <div class="boton-registro-wrap">
             <button type="submit" class="boton-registro">Registro</button>
         </div>
         <hr>
