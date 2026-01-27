@@ -11,18 +11,22 @@
         <h1>Login</h1>        
         <h2>Conectate para acceder a nuestros servicios</h2>
         <div class="Apartado-email">
-            <a>Mail</a>
-            <form action="/registro" method="post" class="Registro-email">
-                <i class="fas fa-envelope"></i> <!-- Este es el icono del sobre -->
-                <input type="email" id="email" name="email" class="email-input" placeholder="email@email.com" required>
+            <form class="Registro-email">
+              <label for="email">Mail</label>
+              <div class="input-wrap">
+                <input id="email" type="email" name="email" placeholder="Introduce tu email" required>
+                <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
+              </div>
             </form>
         </div>
         <div class="Apartado-contraseña">
-        <a>Contraseña</a>
-        <form action="/registro" method="post">
-            <i class="fas fa-lock"></i> <!-- Este es el icono de la contraseña -->
-            <input type="password" id="contrasena" name="contrasena" placeholder="Introduce tu contraseña" required>
-        </form>
+            <form action="/registro" method="post" class="Registro-contrasena">
+                <label for="contrasena">Contraseña</label>
+                <div class="input-wrap">
+                    <input id="contrasena" type="password" name="contrasena" placeholder="Introduce tu contraseña" required>
+                    <i class="fas fa-lock input-icon" aria-hidden="true"></i>
+                </div>
+            </form>
         </div>
         <div class="Finalización-registro">
             <div class="checkbox-container">
@@ -31,11 +35,10 @@
             </div>
             <p>¿Olvidaste tu contraseña?</p>
         </div>
-        <div class="boton-registro">
+        <div class="boton-registro-wrap">
             <button type="submit" class="boton-registro">Registro</button>
         </div>
         <hr>
-        <p>¿No tienes cuenta? <a href="Registro.html">Registrate ahora</a></p>
     </div>  
 </body>
 </html>
