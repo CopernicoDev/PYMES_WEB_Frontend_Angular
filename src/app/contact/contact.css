@@ -14,7 +14,8 @@ html, body {
     margin-top: 40px;
     width: 30cm; /* Ancho completo */
     height: 3cm; /* Altura del rectángulo */
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3); /* Sombra blanca */
+    border: 0.5px solid rgba(255, 255, 255, 0.3); /* Borde del rectángulo */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Sombra blanca */
     display: flex; /* Utiliza flexbox para centrar el contenido */
     align-items: center; /* Centra verticalmente los elementos */
     justify-content: baseline; /* Centra horizontalmente los elementos */
@@ -27,15 +28,19 @@ html, body {
 	max-width:1100px;
 	margin: 0 auto;
 	padding: 0 20px;
-  gap: 50rem;
 }
 .site-header .brand{
 	font-size:1.6rem;
 	font-weight:700;
 }
-.site-header .nav .nav-item{
+.site-header .nav {
 	color:#fff;
-	margin-left:24px;
+	
+}
+
+.site-header  .nav-item{
+	color:#fff;
+	
 }
 
 /* Hero centrado grande */

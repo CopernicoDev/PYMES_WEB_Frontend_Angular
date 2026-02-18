@@ -29,7 +29,7 @@ body{
 }
 
 .rectangulo-negro, .rectangulo-gris, .Bloque-infraestructura, .rectangulo-empieza-ahora {
-    font-family: inherit !important;
+    font-family: inherit;
 }
 
 .Cuadro-registro-login a:link,
