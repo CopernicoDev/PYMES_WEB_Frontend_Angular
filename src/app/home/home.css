@@ -144,6 +144,16 @@ body{
     
 }
 
+.Elemnto-barra3 a,
+.Elemnto-barra3 a:visited{
+    color: inherit;       
+    text-decoration: none;   /* sin subrayado */        /* cursor normal (no mano) */
+    font-weight: inherit;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
 
 
 .Cuadro-registro-login{

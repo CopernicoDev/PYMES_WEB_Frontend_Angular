@@ -1,39 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
-:root{
-  --bg:#111213;
-  --panel:#222223;
-  --muted:#bdbdbd;
-  --accent:#ffffff;
+html, body {
+	background-color: #1a1a19;
+	color: #fff;
+	margin: 0;
+	font-family: inherit;
 }
 
-*{box-sizing:border-box;font-family:'Poppins',system-ui,Arial,sans-serif}
-
-:host{display:block;background:var(--bg);color:var(--accent)}
-
-.container{max-width:1050px;margin:0 auto;padding:0 24px}
-
-.site-header{background:#2c2c2c;padding:20px 0}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:800;color:white;font-size:28px}
-.nav{display:flex;gap:48px}
-.nav-item{color:#e6e6e6;opacity:0.9}
-
-.hero{padding:64px 0 48px;text-align:center}
-.hero h1{font-size:64px;margin:0 0 8px}
-.hero .subtitle{color:var(--muted);margin:0;font-weight:500}
-
-.contact-section{display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:start;padding:40px 0 120px}
-.form-col{max-width:520px}
-.form-col label{display:block;color:var(--muted);font-weight:600;margin-bottom:16px}
-.form-col input{width:100%;padding:18px;background:#161616;border:1px solid #2f2f2f;color:#ddd;border-radius:2px;margin-top:8px}
-.send-btn{margin-top:20px;padding:12px 22px;background:#444;border:none;color:white;border-radius:4px;cursor:pointer}
-
-.image-col{height:360px;background-image:url('/assets/contact-earth.jpg');background-size:cover;background-position:center;border-radius:4px;border:1px solid #222}
-
-/* Responsive */
-@media (max-width:900px){
-  .contact-section{grid-template-columns:1fr;}
-  .image-col{height:260px;margin-top:20px}
-  .hero h1{font-size:44px}
+/* Encabezado similar a home.css */
+.site-header{
+	background-color: #464542; /* Color de fondo del rectángulo */
+    color: #fff; /* Color del texto dentro del rectángulo */
+    margin: auto;
+    padding: auto;
+    margin-top: 40px;
+    width: 30cm; /* Ancho completo */
+    height: 3cm; /* Altura del rectángulo */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); /* Sombra blanca */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: baseline; /* Centra horizontalmente los elementos */
 }
+.site-header .container.header-inner{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	max-width:1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.site-header .brand{
+	font-size:1.6rem;
+	font-weight:700;
+}
+.site-header .nav .nav-item{
+	color:#fff;
+	margin-left:24px;
+}
+
+/* Hero centrado grande */
+.hero{
+	padding: 90px 20px 40px;
+	text-align:center;
+}
+.hero h1{
+	font-size:3.6rem;
+	margin:0 0 10px;
+	font-weight:700;
+  color: #fff;
+}
+.hero .subtitle{
+	margin:0;
+	color: #dcdcdc;
+	font-size:1.15rem;
+}
+
+/* Sección principal del contacto */
+.contact-section.container{
+	max-width:1100px;
+	margin: 60px auto 120px;
+	display:flex;
+	gap:48px;
+	align-items:flex-start;
+	padding: 0 20px;
+	box-sizing:border-box;
+}
+
+.form-col{
+	flex:1 1 480px;
+	min-width:260px;
+}
+.form-col label{
+	display:block;
+	font-weight:700;
+	font-size:0.9rem;
+	margin: 12px 0 8px;
+	color:var(--text);
+}
+.form-col input{
+	display:block;
+	width:100%;
+	padding:12px 14px;
+	border-radius:2px;
+	border:1px solid var(--input-border);
+	background: var(--input-bg);
+	color:#e6e6e6;
+	box-sizing:border-box;
+	height:48px;
+}
+.form-col input::placeholder{ color: var(--placeholder); }
+
+.send-btn{
+	margin-top:14px;
+	background: var(--panel);
+	color: var(--text);
+	padding:12px 26px;
+	border:1px solid rgba(255,255,255,0.04);
+	border-radius:3px;
+	font-weight:700;
+	cursor:pointer;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+.send-btn:active{ transform: scale(0.995); }
+
+/* Columna de imagen a la derecha */
+.image-col{
+	width:420px;
+	height:380px;
+	background-color: #000;
+	background-image: url('/assets/earth.jpg'); /* Reemplazar con la imagen real en assets */
+	background-size: cover;
+	background-position: center;
+	border: 1px solid rgba(255,255,255,0.03);
+	box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+	border-radius:4px;
+}
+
+
+
+
+
