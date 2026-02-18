@@ -3,7 +3,6 @@ html, body {
 	background-color: #1a1a19;
 	color: #fff;
 	margin: 0;
-	font-family: inherit;
 }
 
 /* Encabezado similar a home.css */
@@ -15,10 +14,11 @@ html, body {
     margin-top: 40px;
     width: 30cm; /* Ancho completo */
     height: 3cm; /* Altura del rectángulo */
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); /* Sombra blanca */
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3); /* Sombra blanca */
     display: flex; /* Utiliza flexbox para centrar el contenido */
     align-items: center; /* Centra verticalmente los elementos */
     justify-content: baseline; /* Centra horizontalmente los elementos */
+    
 }
 .site-header .container.header-inner{
 	display:flex;
@@ -27,6 +27,7 @@ html, body {
 	max-width:1100px;
 	margin: 0 auto;
 	padding: 0 20px;
+  gap: 50rem;
 }
 .site-header .brand{
 	font-size:1.6rem;
