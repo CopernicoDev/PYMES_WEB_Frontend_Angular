@@ -32,12 +32,14 @@ html, body {
 .site-header .brand{
 	font-size:1.6rem;
 	font-weight:700;
-	margin-right: 50rem;
+	margin-right: 45rem;
 }
 
 
 .site-header  .nav-item{
 	color:#fff;
+	font-size: larger;
+	font-weight: bold;
 	
 	
 }
@@ -45,8 +47,24 @@ html, body {
 .site-header  .nav-item2{
 	color:#fff;
 	margin-left: 5rem;
-	
+	font-size: larger;
+	font-weight: bold;
 }
+
+.site-header .nav-item,
+.site-header .nav-item:visited,
+.site-header .nav-item2,
+.site-header .nav-item2:visited{
+	text-decoration: none; /* sin subrayado */
+}
+.site-header .nav-item:hover,
+.site-header .nav-item2:hover,
+.site-header .nav-item:focus,
+.site-header .nav-item2:focus{
+	text-decoration: none;
+	outline: none;
+}
+
 
 /* Hero centrado grande */
 .hero{

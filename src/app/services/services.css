@@ -38,11 +38,31 @@ body{
     margin-right: 100px; /* Espacio entre los elementos de lista */
 }
 
+.Elemnto-barra1 li{
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+}
+
 .derecha {
     display: flex;
     justify-content: flex-end;
     align-items: center; /* Centra los elementos verticalmente */
 
+}
+
+.Elemnto-barra2 {
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.Elemnto-barra3 {
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 50px;
 }
 
 .rectangulo{
@@ -53,6 +73,8 @@ body{
     height: 35px;
     width: 120px;
     font-size: medium; 
+    font-weight: bold;
+
 }
 
 .rectangulo a {
@@ -63,13 +85,18 @@ body{
 main{
     background-color: #1a1a19;
     color: #fff;
-    padding-left: 20px;
-    padding-top: 25px;
+    padding-top: 1rem;
+}
+
+.Contenido{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 
 .Contenido p{
     width: 6cm;
-    padding-left: 30px;
+    text-align: left;
+    
 }
 
 .Contenido button{
@@ -79,39 +106,25 @@ main{
     height: 35px;
     width: 120px;
     font-size: medium;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    
     
 }
 
-.Contenido > div > *:first-child {
-    margin-top: 0;
-}
-
-
 .Contenido2{
     background-color: #464542;
-    color: #fff;
-    width: auto;
-    height: auto;
-    margin: auto;
-    padding-top: 5px;
-    padding-left: 5px;
-    text-align: left;
-    width: 38cm;
-    height: 8cm;
-    position: relative;
-    right: 30px;
+    padding-left: 2rem;
+    width: 50%;
+    padding-bottom: 2rem;
+    border-color: #fff;
+    border-width: 4px;
+    border-style: solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
 
-.Contenido2 hr {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid #fff; /* Cambia el color según tus necesidades */
-}
+
 
 
 .Contenido2 p{
