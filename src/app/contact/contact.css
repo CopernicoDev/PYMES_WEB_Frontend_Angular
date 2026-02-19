@@ -32,14 +32,19 @@ html, body {
 .site-header .brand{
 	font-size:1.6rem;
 	font-weight:700;
+	margin-right: 50rem;
 }
-.site-header .nav {
-	color:#fff;
-	
-}
+
 
 .site-header  .nav-item{
 	color:#fff;
+	
+	
+}
+
+.site-header  .nav-item2{
+	color:#fff;
+	margin-left: 5rem;
 	
 }
 
@@ -80,25 +85,30 @@ html, body {
 	font-weight:700;
 	font-size:0.9rem;
 	margin: 12px 0 8px;
-	color:var(--text);
+	color: #fff;
+	
 }
 .form-col input{
-	display:block;
-	width:100%;
-	padding:12px 14px;
-	border-radius:2px;
-	border:1px solid var(--input-border);
-	background: var(--input-bg);
-	color:#e6e6e6;
-	box-sizing:border-box;
-	height:48px;
+	width: 100%;
+    padding: 0.75rem 1rem;
+    background: #1a1a19;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+	max-width: 35rem;
+    transition: box-shadow .12s ease, border-color .12s ease;
+	margin-top: 1rem;
 }
-.form-col input::placeholder{ color: var(--placeholder); }
+.form-col input::placeholder{
+	color: #9f9d9d;
+ }
 
 .send-btn{
 	margin-top:14px;
-	background: var(--panel);
-	color: var(--text);
+	background: #464542;
+	color: #fff;
 	padding:12px 26px;
 	border:1px solid rgba(255,255,255,0.04);
 	border-radius:3px;
