@@ -1,32 +1,30 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Infraestructura con Pymes</title>
-</head>
+
+<header class="barra-superior">
+  <nav>
+    <ul>
+      <li class="Elemnto-barra1">ITSup</li>
+      <li class="Elemnto-barra2"><a routerLink="/services">Servicio</a></li>
+      <li class="Elemnto-barra3"><a routerLink="/contacto">Contacto</a></li>
+      <li class="Cuadro-registro-login">
+        <button class="rectangulo-negro"><a routerLink="/home">Inicio</a></button>
+        <button class="rectangulo-gris"><a routerLink="/sign-up">Registro</a></button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
 <body>
     <div class="contenedor">
         <h1>Login</h1>        
         <h2>Conectate para acceder a nuestros servicios</h2>
-        <div class="Apartado-email">
-            <form class="Registro-email">
-              <label for="email">Mail</label>
-              <div class="input-wrap">
-                <input id="email" type="email" name="email" placeholder="Introduce tu email" required>
-                <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
-              </div>
-            </form>
-        </div>
-        <div class="Apartado-contraseña">
-            <form action="/registro" method="post" class="Registro-contrasena">
-                <label for="contrasena">Contraseña</label>
-                <div class="input-wrap">
-                    <input id="contrasena" type="password" name="contrasena" placeholder="Introduce tu contraseña" required>
-                    <i class="fas fa-lock input-icon" aria-hidden="true"></i>
-                </div>
-            </form>
+        <div class="form-col">
+            <label>Nombre
+                <input type="text" placeholder="Escribe tu nombre y ambos apellidos" />
+            </label>
+            
+            <label>Mail
+                <input type="email" placeholder="example@gmail.com" />
+            </label>
         </div>
         <div class="Finalización-registro">
             <div class="checkbox-container">
@@ -35,10 +33,7 @@
             </div>
             <p>¿Olvidaste tu contraseña?</p>
         </div>
-        <div class="boton-registro-wrap">
-            <button type="submit" class="boton-registro">Registro</button>
-        </div>
+        <button class="send-btn">Registro</button>
         <hr>
     </div>  
 </body>
-</html>

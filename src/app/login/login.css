@@ -6,6 +6,111 @@ body{
     text-align: center;
 }
 
+.barra-superior {
+  background-color: #464542;
+  color: #fff;
+  margin: auto;
+  margin-top: 40px;
+  width: 30cm;
+  height: 3cm;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.barra-superior nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.barra-superior nav ul li {
+  display: inline;
+}
+
+.Elemnto-barra1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-left: 35px;
+}
+
+.Elemnto-barra2 a,
+.Elemnto-barra2 a:visited {
+  color: inherit;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+  margin-left: 200px;
+}
+
+.Elemnto-barra3 {
+  font-size: x-large;
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+.Elemnto-barra3 a,
+.Elemnto-barra3 a:visited {
+  color: inherit;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.Cuadro-registro-login {
+  font-weight: bold;
+  margin-left: 230px;
+}
+
+.Cuadro-registro-login a:link,
+.Cuadro-registro-login a:visited,
+.Cuadro-registro-login a:hover,
+.Cuadro-registro-login a:active,
+.rectangulo-negro a:link,
+.rectangulo-negro a:visited,
+.rectangulo-negro a:hover,
+.rectangulo-negro a:active,
+.rectangulo-gris a:link,
+.rectangulo-gris a:visited,
+.rectangulo-gris a:hover,
+.rectangulo-gris a:active {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.rectangulo-negro {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #1a1a19;
+  padding: 15px 25px;
+  margin-left: -45px;
+  cursor: pointer;
+  border: 2px solid #1a1a19;
+  transition: transform .08s ease, box-shadow .08s ease;
+  will-change: transform;
+}
+.rectangulo-negro:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.rectangulo-gris {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 15px 25px;
+  cursor: pointer;
+  border: 2px solid #1a1a19;
+  transition: transform .08s ease, box-shadow .08s ease;
+  will-change: transform;
+}
+.rectangulo-gris:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
+}
+
 
 .contenedor{
     display: inline-block;
@@ -28,41 +133,22 @@ body{
     bottom: 25px;
 }
 
-/* Apartado-email: estilo modular y accesible */
-.Apartado-email {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    max-width: 40rem;       /* evita unidades fijas (cm) */
-    padding: 0.5rem;
-    padding-left: 0.01rem;
-    /*background: #2a2a2a;    /* panel neutro, evita colores llamativos por defecto */
-    /*border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.04);*/
-    position: relative;     /* para iconos absolutos si hace falta */
+
+.form-col{
+	flex:1 1 480px;
+	min-width:260px;
+}
+.form-col label{
+	display:block;
+	font-weight:700;
+	font-size:0.9rem;
+	margin: 12px 0 8px;
+	color: #fff;
     text-align: left;
-    margin-bottom: 1rem;
+	
 }
-
-/* forma recomendada */
-.Apartado-email form {
-    box-sizing: border-box;   /* incluye padding en el ancho */
-    width: 100%;              /* ocupa todo el ancho del contenedor */
-    max-width: 42rem;         /* límite visual (ej. 42rem ≈ 672px) */
-    margin: 0 auto;           /* centra si hay espacio extra */
-    padding: 0 1rem;          /* espacio interior sensible */
-}
-
-.Apartado-email label{
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-    display: block;
-}
-
-/* Inputs: usar unidades relativas y estilos consistentes */
-.Apartado-email input[type="email"] {
-    width: 100%;
+.form-col input{
+	width: 100%;
     padding: 0.75rem 1rem;
     background: #1a1a19;
     color: #fff;
@@ -70,127 +156,13 @@ body{
     border-radius: 6px;
     font-size: 1rem;
     outline: none;
+	max-width: 35rem;
     transition: box-shadow .12s ease, border-color .12s ease;
+	margin-top: 1rem;
 }
-
-/* Placeholder y color del texto */
-.Apartado-email input::placeholder {
-  color: #9f9d9d;
-}
-
-/* Focus visible y accesible */
-.Apartado-email input:focus {
-  border-color: #969592;
-  box-shadow: 0 0 0 4px rgba(150,149,146,0.08);
-}
-
-/* Icono dentro del input (si usas <i> o svg) */
-.Apartado-email .input-icon {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #9f9d9d;
-  pointer-events: none;
-}
-
-.Apartado-email .input-wrap { position: relative; }
-.Apartado-email .input-wrap .input-icon {
-  position: absolute;
-  right: 0.95rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #9f9d9d;
-  pointer-events: none;
-}
-.Apartado-email .input-wrap input { padding-right: 0rem; }
-
-/* Evitar altura fija */
-.Apartado-email { height: auto; }
-
-
-
-/*///////////////////*/
-
-/* Apartado-contraseña: estilo modular y accesible */
-.Apartado-contraseña{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    max-width: 40rem;       /* evita unidades fijas (cm) */
-    padding: 0.5rem;
-    padding-left: 0.01rem;
-    /*background: #2a2a2a;    /* panel neutro, evita colores llamativos por defecto */
-    /*border-radius: 8px;*/
-    /*border: 1px solid rgba(255,255,255,0.04);*/
-    position: relative;     /* para iconos absolutos si hace falta */
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-/* forma recomendada */
-.Apartado-contraseña form {
-    box-sizing: border-box;   /* incluye padding en el ancho */
-    width: 100%;              /* ocupa todo el ancho del contenedor */
-    max-width: 42rem;         /* límite visual (ej. 42rem ≈ 672px) */
-    margin: 0 auto;           /* centra si hay espacio extra */
-    padding: 0 1rem;          /* espacio interior sensible */
-}
-
-.Apartado-contraseña label{
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-    display: block;
-}
-
-/* Inputs: usar unidades relativas y estilos consistentes */
-.Apartado-contraseña input[type="password"] {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    background: #1a1a19;
-    color: #fff;
-    border: 1px solid #333;
-    border-radius: 6px;
-    font-size: 1rem;
-    outline: none;
-    transition: box-shadow .12s ease, border-color .12s ease;
-}
-
-/* Placeholder y color del texto */
-.Apartado-contraseña input::placeholder {
-  color: #9f9d9d;
-}
-
-/* Focus visible y accesible */
-.Apartado-contraseña input:focus {
-  border-color: #969592;
-  box-shadow: 0 0 0 4px rgba(150,149,146,0.08);
-}
-
-/* Icono dentro del input (si usas <i> o svg) */
-.Apartado-contraseña .input-icon {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #9f9d9d;
-  pointer-events: none;
-}
-
-.Apartado-contraseña .input-wrap { position: relative; }
-.Apartado-contraseña .input-wrap .input-icon {
-  position: absolute;
-  right: 0.95rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #9f9d9d;
-  pointer-events: none;
-}
-.Apartado-contraseña .input-wrap input { padding-right: 0rem; }
-
-/* Evitar altura fija */
-.Apartado-contraseña { height: auto; }
+.form-col input::placeholder{
+	color: #9f9d9d;
+ }
 
 
 /*///////////////////*/
@@ -249,39 +221,21 @@ input[type="checkbox"]:checked + label:before {
 }
 
 
-.boton-registro {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 50rem;
-    padding: 0.7rem;
-    background-color: black;
-    color: #fff;
-    font-size: x-large;
-    font-family: inherit;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+.send-btn{
+	margin-top:14px;
+	background: #000000;
+	color: #fff;
+	width: 100%;
+    max-width: 40rem;
+    padding:12px 26px;
+	border:1px solid rgba(255,255,255,0.04);
+	border-radius:3px;
+	font-weight: bolder;
+    font-size: larger;
+	cursor:pointer;
+	box-shadow: 0 6px 18px rgba(53, 53, 53, 0.5);
 }
-
-/* Asegúrate que no estés anulando transiciones globalmente */
-.boton-registro {
-  transition: transform .08s ease, box-shadow .08s ease;
-  will-change: transform;
-}
-
-/* efecto al hacer click / activar con teclado */
-.boton-registro:active,
-.boton-registro--pressed { /* clase opcional si gestionas por JS */
-  transform: scale(0.98);
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
-}
-
-/* foco accesible (teclado) */
-.boton-registro:focus {
-  outline: 3px solid rgba(150,149,146,0.16);
-  outline-offset: 2px;
-}
+.send-btn:active{ transform: scale(0.995); }
 
 
 

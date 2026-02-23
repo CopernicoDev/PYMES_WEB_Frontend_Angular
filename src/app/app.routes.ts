@@ -6,9 +6,10 @@ import { SignUp } from './sign-up/sign-up';
 import { Contact } from './contact/contact';
 
 export const routes: Routes = [
-	{ path: '', component: Home },
+
+	{ path: 'home', component: Home },
 	{ path: 'services', component: Services },
 	{ path: 'login', component: Login },
-{ path: 'sign-up', component: SignUp },
-{ path: 'contacto', component: Contact }
+	{ path: 'sign-up', component: SignUp },
+	{ path: 'contacto', component: Contact }
 ];

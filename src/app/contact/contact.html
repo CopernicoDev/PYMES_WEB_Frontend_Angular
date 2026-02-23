@@ -4,7 +4,7 @@
     <ul>
       <li class="Elemnto-barra1">ITSup</li>
       <li class="Elemnto-barra2"><a routerLink="/services">Servicio</a></li>
-      <li class="Elemnto-barra3"><a routerLink="/contacto">Contacto</a></li>
+      <li class="Elemnto-barra3"><a routerLink="/home">Inicio</a></li>
       <li class="Cuadro-registro-login">
         <button class="rectangulo-negro"><a routerLink="/login">Log in</a></button>
         <button class="rectangulo-gris"><a routerLink="/sign-up">Registro</a></button>
@@ -12,21 +12,28 @@
     </ul>
   </nav>
 </header>
+
 <body>
   <section class="hero">
   <h1>Contacto</h1>
   <p class="subtitle">Conecta con nosotros</p>
 </section>
 
-<section class="contenedor-contacto">
-  <div class="Apartado-email">
-    <form class="Registro-email">
-      <label for="email">Mail</label>
-      <div class="input-wrap">
-        <input id="email" type="email" name="email" placeholder="Introduce tu email" required>
-        <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
-      </div>
-    </form>
+<section class="contact-section container">
+  <div class="form-col">
+    <label>Nombre
+      <input type="text" placeholder="Escribe tu nombre y ambos apellidos" />
+    </label>
+
+    <label>Mail
+      <input type="email" placeholder="example@gmail.com" />
+    </label>
+
+    <label>Asunto
+      <input type="text" placeholder="Describe brevemente tu petición" />
+    </label>
+
+    <button class="send-btn">Enviar</button>
   </div>
 
   <div class="image-col" aria-hidden="true"></div>
