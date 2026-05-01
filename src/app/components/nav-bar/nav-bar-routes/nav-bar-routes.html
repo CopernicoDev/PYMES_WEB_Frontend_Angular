@@ -1,0 +1,9 @@
+<ul class="flex items-center justify-center gap-20">
+    @for (item of menuOptions; track item.route) {
+    <li>
+        <a [routerLink]="item.route" routerLinkActive="active-link" class="nav-link">
+            {{ item.label }}
+        </a>
+    </li>
+    }
+</ul>
