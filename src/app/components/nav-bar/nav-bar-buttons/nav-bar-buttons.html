@@ -1,6 +1,7 @@
-<ul class="flex items-center justify-center gap-20">
-    <li>
-        <button class="rectangulo-negro"><a routerLink="/login">Log in</a></button>
-        <button class="rectangulo-gris"><a routerLink="/sign-up">Registro</a></button>
+<ul>
+    <li class="flex">
+        @for (item of buttonsOptions; track item.label) {
+        <button [routerLink]="item.route" class="border border-border {{ item.estilos }}">{{item.label}}</button>
+        }
     </li>
 </ul>

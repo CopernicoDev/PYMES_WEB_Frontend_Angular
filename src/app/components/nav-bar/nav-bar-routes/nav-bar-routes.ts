@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Option } from '../../../interface/menuOptions-interface';
 
-interface Option {
-  label: string;
-  route: string;
-}
+
 
 @Component({
   selector: 'app-nav-bar-routes',
