@@ -15,16 +15,18 @@ export class NavBarRoutes {
     {
       label: 'ITSup',
       route: '/home',
-      estilos: 'font-bold text-4xl'
+      estilos: 'col-start-1 bg-bg-light border border-border-muted p-4 rounded-md'
     },
     {
       label: 'Servicio',
       route: '/servicios',
+      estilos: 'col-start-4 bg-bg-light border border-border-muted p-4 rounded-md hover:bg-bg-dark transition-colors'
 
     },
     {
       label: 'Contacto',
       route: '/contacto',
+      estilos: 'col-start-5 bg-bg-light border border-border-muted p-4 rounded-md hover:bg-bg-dark transition-colors'
     }
   ]
 

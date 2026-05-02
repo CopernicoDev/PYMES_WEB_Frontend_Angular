@@ -1,9 +1,7 @@
-<ul class="flex items-center justify-center gap-20">
+<nav class="grid grid-cols-8 gap-4 w-full">
     @for (item of menuOptions; track item.route) {
-    <li>
-        <a [routerLink]="item.route" routerLinkActive="active-link" class="nav-link {{item.estilos}}">
-            {{ item.label }}
-        </a>
-    </li>
+    <a [routerLink]="item.route" routerLinkActive="active-link" class="nav-link {{item.estilos}} text-center font-bold">
+        {{item.label}}
+    </a>
     }
-</ul>
+</nav>

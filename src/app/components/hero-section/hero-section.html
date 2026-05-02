@@ -1,7 +1,21 @@
-<main>
-    <h1 class="font-light text-text text-4xl mt-20">Tu infraesructura para Pymes</h1>
-    <h2 class="flex mt-8 text-text text-3xl">Soporte informático al alcance de tus manos</h2>
-    <h3>Diseño precisos para tus necesidades</h3>
-    <div></div>
-    <button>Empieza ahora</button>
+<main class="grid grid-cols-1 md:grid-cols-4 gap-2 bg-bg-dark mt-3.5 p-2 rounded-xl">
+    <app-info-card class="block md:col-span-4">
+        <h1 class="text-xl font-bold">Tu infraestructura para PYMES</h1>
+    </app-info-card>
+
+    <app-info-card class="block md:col-span-3">
+        <h2 class="text-lg font-semibold">Subtítulo H2</h2>
+    </app-info-card>
+
+    <app-info-card class="block md:col-span-3">
+        <h3 class="text-md font-medium">Sección H3</h3>
+    </app-info-card>
+
+    <app-info-card class="block md:col-span-3">
+        <button class="bg-text hover:bg-text-muted text-bg font-semibold py-2 px-4 rounded">Acción</button>
+    </app-info-card>
+
+    <app-info-card class="block md:col-start-4 md:row-start-2 md:row-span-3">
+        <p>Espacio derecho (Elemento 5)</p>
+    </app-info-card>
 </main>
