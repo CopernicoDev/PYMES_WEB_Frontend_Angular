@@ -15,10 +15,12 @@ export class NavBarRoutes {
     {
       label: 'ITSup',
       route: '/home',
+      estilos: 'font-bold text-4xl'
     },
     {
       label: 'Servicio',
       route: '/servicios',
+
     },
     {
       label: 'Contacto',
