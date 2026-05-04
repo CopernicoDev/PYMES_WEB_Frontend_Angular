@@ -1,5 +1,6 @@
 <div class="grid grid-cols-2 w-max">
     @for (item of buttonsOptions; track item.label) {
-    <button [routerLink]="item.route" class="border border-border {{ item.estilos }}">{{item.label}}</button>
+    <button [routerLink]="item.route" class="border border-border {{ item.estilos }}">{{item.label}}
+    </button>
     }
 </div>
