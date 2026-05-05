@@ -1,9 +1,11 @@
-<section class="bg-bg min-h-screen w-full text-text flex flex-col items-center">
+<section class="bg-bg min-h-screen w-full text-text grid grid-rows-[auto_auto_1fr]">
 
-    <app-nav-bar class="w-full"></app-nav-bar>
+    <app-nav-bar></app-nav-bar>
 
-    <app-hero-section class="w-full"></app-hero-section>
+    <!-- Usamos justify-self-center para centrar el hero si no queremos que ocupe todo el ancho visualmente, aunque max-w-7xl mx-auto hace el trabajo -->
+    <app-hero-section class="w-full max-w-7xl mx-auto px-4"></app-hero-section>
 
-    <app-about-us-section class="w-full"></app-about-us-section>
+    <!-- Como el padre es grid, este elemento ocupa automáticamente todo el ancho y alto del 1fr -->
+    <app-about-us-section class="mt-20"></app-about-us-section>
 
 </section>
