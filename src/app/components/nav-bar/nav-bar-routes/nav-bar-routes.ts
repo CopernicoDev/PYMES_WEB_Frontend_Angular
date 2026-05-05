@@ -15,7 +15,7 @@ export class NavBarRoutes {
     {
       label: 'ITSup',
       route: '/home',
-      estilos: 'p-4 font-extrabold text-2xl '
+      estilos: 'p-4 font-extrabold text-4xl '
     },
     {
       label: 'Servicio',

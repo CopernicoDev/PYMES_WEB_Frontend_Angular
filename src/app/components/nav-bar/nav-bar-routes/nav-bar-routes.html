@@ -1,4 +1,4 @@
-<nav class="grid grid-flow-col gap-25 items-center">
+<nav class="grid grid-flow-col gap-40 items-center">
     @for (item of menuOptions; track item.route) {
     <a [routerLink]="item.route" routerLinkActive="active-link" class="nav-link {{item.estilos}}">
         {{item.label}}
