@@ -19,13 +19,13 @@ export class NavBarRoutes {
     },
     {
       label: 'Servicio',
-      route: '/servicios',
+      route: '/services',
       estilos: 'p-4 font-semibold text-xl '
 
     },
     {
       label: 'Contacto',
-      route: '/contacto',
+      route: '/contact',
       estilos: 'p-4 font-semibold- text-xl'
     }
   ]

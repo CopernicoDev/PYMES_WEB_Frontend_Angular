@@ -1,7 +1,6 @@
 <nav class="grid grid-flow-col items-center">
-
     @for (item of buttonsOptions; track item.label) {
-    <button [routerLink]="item.route" class="border border-border {{ item.estilos }}">{{item.label}}
-    </button>
+    <a [routerLink]="item.route" class="border border-border cursor-pointer text-center {{ item.estilos }}">{{item.label}}
+    </a>
     }
 </nav>

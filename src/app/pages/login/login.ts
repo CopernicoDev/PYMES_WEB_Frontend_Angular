@@ -8,6 +8,6 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./login.css'],
   imports: [RouterLink]
 })
-export class Login {
+export default class Login {
 
 }

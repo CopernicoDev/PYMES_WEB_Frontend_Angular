@@ -1,44 +1,33 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sign-up.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Infraestructura con Pymes</title>
-</head>
-<body>
-    <div class="contenedor">
-        <h1>Registro</h1>
-        <h2>Registrate para acceder a nuestros servicios</h2>
-        <div class="Apartado-email">
-            <form class="Registro-email">
-              <label for="email">Mail</label>
-              <div class="input-wrap">
+<div class="contenedor">
+    <h1>Registro</h1>
+    <h2>Registrate para acceder a nuestros servicios</h2>
+    <div class="Apartado-email">
+        <form class="Registro-email">
+            <label for="email">Mail</label>
+            <div class="input-wrap">
                 <input id="email" type="email" name="email" placeholder="Introduce tu email" required>
                 <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
-              </div>
-            </form>
-        </div>
-        <div class="Apartado-contraseña">
-            <form action="/registro" method="post" class="Registro-contrasena">
-                <label for="contrasena">Contraseña</label>
-                <div class="input-wrap">
-                    <input id="contrasena" type="password" name="contrasena" placeholder="Introduce tu contraseña" required>
-                    <i class="fas fa-lock input-icon" aria-hidden="true"></i>
-                </div>
-            </form>
-        </div>
-        <div class="Finalización-registro">
-            <div class="checkbox-container">
-                <input type="checkbox" id="recuerdame" name="recuerdame">
-                <label for="recuerdame">Recuerdame</label>
             </div>
-            <p>¿Olvidaste tu contraseña?</p>
+        </form>
+    </div>
+    <div class="Apartado-contraseña">
+        <form action="/registro" method="post" class="Registro-contrasena">
+            <label for="contrasena">Contraseña</label>
+            <div class="input-wrap">
+                <input id="contrasena" type="password" name="contrasena" placeholder="Introduce tu contraseña" required>
+                <i class="fas fa-lock input-icon" aria-hidden="true"></i>
+            </div>
+        </form>
+    </div>
+    <div class="Finalización-registro">
+        <div class="checkbox-container">
+            <input type="checkbox" id="recuerdame" name="recuerdame">
+            <label for="recuerdame">Recuerdame</label>
         </div>
-        <div class="boton-registro-wrap">
-            <button type="submit" class="boton-registro">Registro</button>
-        </div>
-        <hr>
-    </div>  
-</body>
-</html>
+        <p>¿Olvidaste tu contraseña?</p>
+    </div>
+    <div class="boton-registro-wrap">
+        <button type="submit" class="boton-registro">Registro</button>
+    </div>
+    <hr>
+</div>

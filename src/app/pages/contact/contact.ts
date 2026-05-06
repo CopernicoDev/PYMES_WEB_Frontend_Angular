@@ -8,4 +8,4 @@ import { RouterLink } from "@angular/router";
   styleUrls: ['./contact.css'],
   imports: [RouterLink]
 })
-export class Contact {}
+export default class Contact { }

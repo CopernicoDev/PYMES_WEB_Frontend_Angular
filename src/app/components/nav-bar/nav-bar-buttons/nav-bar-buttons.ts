@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar-buttons',
-  imports: [RouterLink],
+  imports: [RouterLink,],
   templateUrl: './nav-bar-buttons.html',
   styleUrl: './nav-bar-buttons.css',
 })
