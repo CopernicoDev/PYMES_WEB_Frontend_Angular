@@ -6,7 +6,7 @@ import { AboutUsSection } from '../../components/about-us-section/about-us-secti
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavBar, HeroSection, AboutUsSection],
+  imports: [HeroSection, AboutUsSection],
   templateUrl: './home.html',
   styleUrls: ['./home.css'],
 })

@@ -1,4 +1,6 @@
-<app-nav-bar></app-nav-bar>
-<main>
-    <router-outlet></router-outlet>
-</main>
+<section class="flex flex-col bg-bg min-h-screen w-full text-text gap-4">
+    <app-nav-bar class="w-full grid place-items-center"></app-nav-bar>
+    <main class="w-full grid  grid-cols-1">
+        <router-outlet></router-outlet>
+    </main>
+</section>
