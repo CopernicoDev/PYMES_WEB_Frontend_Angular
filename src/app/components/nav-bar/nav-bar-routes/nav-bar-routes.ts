@@ -19,7 +19,7 @@ export class NavBarRoutes {
     },
     {
       label: 'Servicio',
-      route: '/services',
+      route: '/services-it',
       estilos: 'p-4 font-semibold text-xl '
 
     },

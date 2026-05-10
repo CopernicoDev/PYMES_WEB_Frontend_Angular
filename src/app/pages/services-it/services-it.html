@@ -1,27 +1,19 @@
-<body>
-    <header class="barra-superior">
-        <nav>
-            <ul class="Elemnto-barra1">
-                <li>Servicios</li>
-            </ul>
-            <ul class="derecha">
-                <li class="Elemnto-barra2">Inicio</li>
-                <li class="Elemnto-barra3">Contacto</li>
-                <li><button type="button" class="rectangulo"><a routerLink="/sign-up">Registro</a></button></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="Contenido">
-            <h1>Plan 1: instalación +1 mes de soporte</h1>
-            <h2>Nuestro plan incluye</h2>
-            <p>instalación de la infraesructura IT 1 mes de soporte</p>
-            <button>Suscribirse</button>
-        </div>
-        <div class="Contenido2">
-            <h1>Plan 2: instalación +1 año de soporte</h1>
-            <h2>Nuestro plan 2 incluye</h2>
-            <p>instalación de la infraesructura IT 1 año de soporte</p>
-            <button>Suscribirse</button>
-        </div>
-    </main>
+<main class="grid grid-cols-1 gap-y-10 mt-30">
+    <app-info-card
+        class="grid w-full border border-border bg-bg-dark min-h-[420px] max-w-[95%] mx-auto rounded-2xl pl-10 pt-10">
+        <h1 class="text-5xl font-extrabold">Plan 1: instalación +1 mes de soporte</h1>
+        <h2 class="text-2xl font-semibold pl-5 pt-2.5">Nuestro plan incluye:</h2>
+        <p class="text-xl font-normal pl-10 pt-2.5">instalación de la infraesructura IT</p>
+        <p class="text-xl font-normal pl-10">1 mes de soporte</p>
+        <button class="bg-text hover:bg-text-muted text-bg font-semibold py-2 px-30 rounded mt-30">Suscribirse</button>
+    </app-info-card>
+
+    <app-info-card
+        class="grid w-full border border-border bg-bg-light min-h-[420px] max-w-[95%] mx-auto rounded-2xl pl-10 pt-10">
+        <h1 class="text-5xl font-extrabold">Plan 2: instalación +1 año de soporte</h1>
+        <h2 class="text-2xl font-semibold pl-5 pt-2.5">Nuestro plan 2 incluye:</h2>
+        <p class="text-xl font-normal pl-10 pt-2.5">instalación de la infraesructura IT</p>
+        <p class="text-xl font-normal pl-10">1 año de soporte</p>
+        <button class="bg-text hover:bg-text-muted text-bg font-semibold py-2 px-30 rounded mt-30 ">Suscribirse</button>
+    </app-info-card>
+</main>
