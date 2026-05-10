@@ -1,36 +1,23 @@
-<!-- ...existing code... -->
-<header class="barra-superior">
-  <nav>
-    <ul>
-      <li class="Elemnto-barra1">ITSup</li>
-      <li class="Elemnto-barra2"><a routerLink="/services">Servicio</a></li>
-      <li class="Elemnto-barra3"><a routerLink="/home">Inicio</a></li>
-      <li class="Cuadro-registro-login">
-        <button class="rectangulo-negro"><a routerLink="/login">Log in</a></button>
-        <button class="rectangulo-gris"><a routerLink="/sign-up">Registro</a></button>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-<body>
-  <section class="hero">
-  <h1>Contacto</h1>
-  <p class="subtitle">Conecta con nosotros</p>
+<section class="grid-cols-1 text-center border border-border mt-20 ">
+  <h1 class="text-5xl font-extrabold">Contacto</h1>
+  <h2 class="text-2xl font-semibold pl-5 pt-2.5">Conecta con nosotros</h2>
 </section>
 
-<section class="contact-section container">
-  <div class="form-col">
-    <label>Nombre
-      <input type="text" placeholder="Escribe tu nombre y ambos apellidos" />
+<section class="mt-30 grid grid-cols-1">
+  <div class="grid grid-cols-2 gap-y-10 border border-border">
+    <label class="row-start-1">Nombre
+      <input type="text" placeholder="Escribe tu nombre y ambos apellidos"
+        class="bg-bg-dark border border-border rounded-xl px-5 py-5 row-start-2" />
     </label>
 
     <label>Mail
-      <input type="email" placeholder="example@gmail.com" />
+      <input type="email" placeholder="example@gmail.com"
+        class="bg-bg-dark border border-border rounded-xl px-5 py-5" />
     </label>
 
     <label>Asunto
-      <input type="text" placeholder="Describe brevemente tu petición" />
+      <input type="text" placeholder="Describe brevemente tu petición"
+        class="bg-bg-dark border border-border rounded-xl px-5 py-5" />
     </label>
 
     <button class="send-btn">Enviar</button>
@@ -38,8 +25,3 @@
 
   <div class="image-col" aria-hidden="true"></div>
 </section>
-  
-</body>
-
-
-<!-- ...existing code... -->
