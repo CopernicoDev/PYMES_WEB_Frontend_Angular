@@ -3,10 +3,25 @@
   <h2 class="text-2xl font-semibold pl-5 pt-2.5">Conecta con nosotros</h2>
 </section>
 
-<div class="grid grid-cols-2 mt-20 border border-border ">
-  <div class="grid grid-cols-1">
-    <app-input id="name" label="Nombre" placeholder="Nombre completo" [control]="contactForm.controls.name"></app-input>
+<div class="grid grid-cols-2 content-center border border-border py-10">
+  <div class="grid gap-6 w-full max-w-md mx-auto border border-border">
+    <app-input label="Nombre" id="name" placeholder="Ingrese su nombre"
+      [control]="contactForm.controls.name"></app-input>
+
+    <app-input label="Correo" id="email" placeholder="Ingrese su correo"
+      [control]="contactForm.controls.email"></app-input>
+
+    <app-input label="Asunto" id="subject" placeholder="Ingrese el asunto"
+      [control]="contactForm.controls.subject"></app-input>
+
+    <app-input label="Mensaje" id="message" type="textarea" placeholder="Ingrese su mensaje"
+      [control]="contactForm.controls.message"></app-input>
+
+    <button class="bg-text hover:bg-text-muted text-bg font-semibold py-4 px-20 rounded mt-5">Enviar</button>
+
   </div>
-  <div class="col-start-2 border border-border content-center text-center">imagen</div>
+  <div class="border border-border bg-bg-dark rounded-2xl text-center content-center">
+    imagen
+  </div>
 
 </div>
