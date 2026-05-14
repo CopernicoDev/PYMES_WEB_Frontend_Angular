@@ -1,33 +1,23 @@
-<div class="contenedor">
-    <h1>Registro</h1>
-    <h2>Registrate para acceder a nuestros servicios</h2>
-    <div class="Apartado-email">
-        <form class="Registro-email">
-            <label for="email">Mail</label>
-            <div class="input-wrap">
-                <input id="email" type="email" name="email" placeholder="Introduce tu email" required>
-                <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
-            </div>
-        </form>
+<div class="grid grid-cols-1 text-center mt-20">
+    <h1 class="text-5xl font-extrabold">Registro</h1>
+    <h2 class="text-2xl font-semibold pl-5 pt-2.5">Registrate para acceder a nuestros servicios personalizados</h2>
+
+</div>
+
+
+<div class="grid grid-cols-1 min-w-[40vw] max-w-[50vw] min-h-[50vh] max-h-[70vh] mt-10 mx-auto p-10 place-items-center">
+    <div class="min-w-[600px] h-full grid content-start gap-y-10 ">
+        <app-input label="Correo" id="email" placeholder="Ingrese su correo"
+            [control]="singUpForm.controls.email"></app-input>
+        <app-input label="Contraseña" id="password" placeholder="Ingrese su contraseña"
+            [control]="singUpForm.controls.password"></app-input>
+        <app-input label="Confirmar Contraseña" id="confirmPassword" placeholder="Confirme su contraseña"
+            [control]="singUpForm.controls.confirmPassword"></app-input>
+        <label class="grid grid-cols-[auto_1fr] border border-border gap-x-2 items-center cursor-pointer">
+            <input type="checkbox" name="remember" id="remember"
+                class="w-5 h-5 accent-[#8A8A8A] cursor-pointer row-start-1 col-start-1">
+            <span class="border border-border">Recuerdame</span>
+        </label>
+        <button class="bg-text hover:bg-text-muted text-bg font-semibold w-full rounded py-3">Registrarse</button>
     </div>
-    <div class="Apartado-contraseña">
-        <form action="/registro" method="post" class="Registro-contrasena">
-            <label for="contrasena">Contraseña</label>
-            <div class="input-wrap">
-                <input id="contrasena" type="password" name="contrasena" placeholder="Introduce tu contraseña" required>
-                <i class="fas fa-lock input-icon" aria-hidden="true"></i>
-            </div>
-        </form>
-    </div>
-    <div class="Finalización-registro">
-        <div class="checkbox-container">
-            <input type="checkbox" id="recuerdame" name="recuerdame">
-            <label for="recuerdame">Recuerdame</label>
-        </div>
-        <p>¿Olvidaste tu contraseña?</p>
-    </div>
-    <div class="boton-registro-wrap">
-        <button type="submit" class="boton-registro">Registro</button>
-    </div>
-    <hr>
 </div>

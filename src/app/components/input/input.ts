@@ -13,6 +13,7 @@ export class Input {
   id = input.required<string>();
   type = input<string>('text');
   placeholder = input<string>('');
+  password = input<string>();
 
   control = input.required<FormControl>();
 

@@ -18,17 +18,17 @@ export const routes: Routes = [
 				loadComponent: () => import('./pages/contact/contact')
 			},
 			{
+				path: 'sign-up',
+				loadComponent: () => import('./pages/sign-up/sign-up')
+			},
+			{
+				path: 'login',
+				loadComponent: () => import('./pages/login/login')
+			},
+			{
 				path: '', redirectTo: 'home', pathMatch: 'full'
 			}
 		]
-	},
-	{
-		path: 'login',
-		loadComponent: () => import('./pages/login/login')
-	},
-	{
-		path: 'sign-up',
-		loadComponent: () => import('./pages/sign-up/sign-up'),
 	},
 	{
 		path: '**',
