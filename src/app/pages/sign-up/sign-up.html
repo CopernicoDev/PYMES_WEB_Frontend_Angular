@@ -10,14 +10,20 @@
         <app-input label="Correo" id="email" placeholder="Ingrese su correo"
             [control]="singUpForm.controls.email"></app-input>
         <app-input label="Contraseña" id="password" placeholder="Ingrese su contraseña"
-            [control]="singUpForm.controls.password"></app-input>
+            [control]="singUpForm.controls.password" type="password"></app-input>
         <app-input label="Confirmar Contraseña" id="confirmPassword" placeholder="Confirme su contraseña"
-            [control]="singUpForm.controls.confirmPassword"></app-input>
-        <label class="grid grid-cols-[auto_1fr] border border-border gap-x-2 items-center cursor-pointer">
-            <input type="checkbox" name="remember" id="remember"
-                class="w-5 h-5 accent-[#8A8A8A] cursor-pointer row-start-1 col-start-1">
-            <span class="border border-border">Recuerdame</span>
-        </label>
+            [control]="singUpForm.controls.confirmPassword" type="password"></app-input>
+        <!-- Contenedor general: Grid de 2 columnas -->
+        <div class="grid grid-cols-1 items-center w-full">
+
+            <!-- Lado Izquierdo: El checkbox y el texto (usando tu grid de antes) -->
+            <label class="grid grid-cols-[auto_1fr] items-center gap-x-3 cursor-pointer w-max">
+                <input type="checkbox" name="remember" id="remember"
+                    class="appearance-none border border-border checked:bg-border-muted w-5 h-5  cursor-pointer">
+                <span>Recuérdame</span>
+            </label>
+            <!-- Lado Derecho: Fuera del label. 'justify-self-end' lo pega al extremo derecho -->
+        </div>
         <button class="bg-text hover:bg-text-muted text-bg font-semibold w-full rounded py-3">Registrarse</button>
     </div>
 </div>

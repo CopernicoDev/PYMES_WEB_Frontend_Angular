@@ -1,35 +1,29 @@
-<nav>
-  <ul>
-    <li class="Elemnto-barra1">ITSup</li>
-    <li class="Elemnto-barra2"><a routerLink="/services">Servicio</a></li>
-    <li class="Elemnto-barra3"><a routerLink="/contacto">Contacto</a></li>
-    <li class="Cuadro-registro-login">
-      <button class="rectangulo-negro"><a routerLink="/home">Inicio</a></button>
-      <button class="rectangulo-gris"><a routerLink="/sign-up">Registro</a></button>
-    </li>
-  </ul>
-</nav>
+<div class="grid grid-cols-1 text-center mt-20">
+  <h1 class="text-5xl font-extrabold">Login</h1>
+  <h2 class="text-2xl font-semibold pl-5 pt-2.5">Conéctate para acceder a nuestros servicios personalizados</h2>
+
+</div>
 
 
-<div class="contenedor">
-  <h1>Login</h1>
-  <h2>Conectate para acceder a nuestros servicios</h2>
-  <div class="form-col">
-    <label>Nombre
-      <input type="text" placeholder="Escribe tu nombre y ambos apellidos" />
-    </label>
+<div class="grid grid-cols-1 min-w-[40vw] max-w-[50vw] min-h-[50vh] max-h-[70vh] mt-10 mx-auto p-10 place-items-center">
+  <div class="min-w-[600px] h-full grid content-start gap-y-10 ">
+    <app-input label="Correo" id="email" placeholder="Ingrese su correo"
+      [control]="loginForm.controls.email"></app-input>
+    <app-input label="Contraseña" id="password" placeholder="Ingrese su contraseña"
+      [control]="loginForm.controls.password" type="password"></app-input>
 
-    <label>Mail
-      <input type="email" placeholder="example@gmail.com" />
-    </label>
-  </div>
-  <div class="Finalización-registro">
-    <div class="checkbox-container">
-      <input type="checkbox" id="recuerdame" name="recuerdame">
-      <label for="recuerdame">Recuerdame</label>
+    <!-- Contenedor general: Grid de 2 columnas -->
+    <div class="grid grid-cols-2 items-center w-full">
+
+      <!-- Lado Izquierdo: El checkbox y el texto (usando tu grid de antes) -->
+      <label class="grid grid-cols-[auto_1fr] items-center gap-x-3 cursor-pointer w-max">
+        <input type="checkbox" name="remember" id="remember"
+          class="appearance-none border border-border checked:bg-border-muted w-5 h-5  cursor-pointer">
+        <span>Recuérdame</span>
+      </label>
+      <!-- Lado Derecho: Fuera del label. 'justify-self-end' lo pega al extremo derecho -->
+      <a class="justify-self-end hover:text-text-muted" href="">¿Has olvidado tu contraseña?</a>
     </div>
-    <p>¿Olvidaste tu contraseña?</p>
+    <button class="bg-text hover:bg-text-muted text-bg font-semibold w-full rounded py-3">Login</button>
   </div>
-  <button class="send-btn">Registro</button>
-  <hr>
 </div>
