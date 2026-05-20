@@ -3,7 +3,6 @@
 
 /* ── Custom Theme ── */
 @theme {
-
   /* Background colors */
   --color-bg-dark: hsl(228 79% 2%);
   --color-bg: hsl(222 55% 5%);
@@ -30,9 +29,84 @@
 
   /* Font family */
   --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* ── 1. DEFINICIÓN DE ANIMACIONES DE SCROLL (DENTRO DEL @theme) ── */
+  --animate-fade-in-up: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in-down: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in-left: fadeInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in-right: fadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-zoom-in: zoomIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.92);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }
 
-/* ── Animaciones de Transición de Páginas (View Transitions) ── */
+/* 👈 Aquí se cierra correctamente el @theme original */
+
+/* ── 2. ESTADO INICIAL DE LOS ELEMENTOS ── */
+.animate-hidden {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* ── 3. ANIMACIONES DE TRANSICIÓN DE PÁGINAS (VIEW TRANSITIONS) ── */
 @keyframes slide-out-left {
   from {
     transform: translateX(0);

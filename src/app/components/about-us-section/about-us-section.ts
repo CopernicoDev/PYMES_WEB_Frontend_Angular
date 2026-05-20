@@ -4,9 +4,10 @@ import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.dir
 
 
 
+
 @Component({
   selector: 'app-about-us-section',
-  imports: [InfoCard],
+  imports: [InfoCard, AnimateOnScrollDirective],
   templateUrl: './about-us-section.html',
   styleUrl: './about-us-section.css',
 })

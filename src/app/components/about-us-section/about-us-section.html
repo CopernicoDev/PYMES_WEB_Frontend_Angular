@@ -1,6 +1,8 @@
 <div class="grid grid-cols-1 w-full h-full mx-auto max-w-7xl gap-y-20 gap-x-10">
 
-    <app-info-card class="col-span-1 grid place-items-center text-center mt-20 px-12">
+    <!-- 1. TÍTULO PRINCIPAL: Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+    <app-info-card appAnimateOnScroll enterClass="animate-fade-in-down" leaveClass="animate-hidden"
+        class="animate-hidden col-span-1 grid place-items-center text-center mt-20 px-12">
         <h1 class="text-3xl font-bold pb-8">Sobre nosotros</h1>
         <h2 class="text-5xl font-bold pb-3">Optimiza tu infraesructura</h2>
         <h3 class="text-xl font-medium">Empoderando negocios con infraesructura IT
@@ -9,57 +11,39 @@
         </h3>
     </app-info-card>
 
-    <app-info-card class="w-full border border-border grid place-items-center min-h-[450px]">
+    <!-- 2. TARJETA CENTRAL: Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+    <app-info-card appAnimateOnScroll enterClass="animate-zoom-in" leaveClass="animate-hidden"
+        class="animate-hidden w-full border border-border grid place-items-center min-h-[450px]">
         <p>Elemento 3: Imagen o video de fondo o texto sobre la infraestructura</p>
     </app-info-card>
 
+    <!-- 3. FILA DE DOS COLUMNAS -->
+    <div class="w-full grid grid-cols-2 gap-x-10">
 
-
-    <div class=" w-full grid grid-cols-2">
-
-        <app-info-card class="grid gap-4 pr-10 ">
+        <!-- Lado Izquierdo (Soluciones IT): Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+        <app-info-card appAnimateOnScroll enterClass="animate-fade-in-left" leaveClass="animate-hidden"
+            class="animate-hidden grid gap-4 pr-10">
             <h4 class="text-3xl font-semibold pt-10">Soluciones IT</h4>
             <h5 class="text-5xl font-bold w-3/4 pt-5">Soluciones especializadas para su negocio</h5>
             <p class="text-2xl font-normal pt-5">Desde StartUPS hasta compañias establecidas, personalizamos y
                 optimizamos el servicio para cada uno.</p>
         </app-info-card>
 
-        <app-info-card class="w-full border border-border grid place-items-center min-h-[450px] ">
+        <!-- Lado Derecho (Detalle): Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+        <app-info-card appAnimateOnScroll enterClass="animate-fade-in-right" leaveClass="animate-hidden"
+            class="animate-hidden w-full border border-border grid place-items-center min-h-[450px]">
             <p>Elemento 4: Imagen o video de fondo o texto sobre la infraestructura</p>
         </app-info-card>
 
     </div>
 
-
-
-    <!-- 4. SECCIÓN INFERIOR (Call to Action) -->
-    <app-info-card class="col-span-1 text-center grid place-items-center py-20">
+    <!-- 4. SECCIÓN INFERIOR: Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+    <app-info-card appAnimateOnScroll enterClass="animate-fade-in-up" leaveClass="animate-hidden"
+        class="animate-hidden col-span-1 text-center grid place-items-center py-20">
         <h6 class="text-5xl font-bold text-text mb-4 md:mb-0">Experiencia en soporte IT</h6>
         <button class="btn bg-text hover:bg-text-muted text-bg font-semibold text-lg py-5 px-50 rounded mt-10">
             Nuestra infraestructura completa
         </button>
     </app-info-card>
 
-
-
-
-
-
-
-
-
-
-    <!--
-    <h1>Sobre nosotros</h1>
-    <h2>Optimiza tu infraesructura</h2>
-    <h3>Empoderando negocios con infraesructura IT adaptable para cualquier reto de esta
-        era digital
-    </h3>
-    <div></div>
-    <h4>Soluciones IT</h4>
-    <h5>Soluciones especializadas para su negocio</h5>
-    <p>Desde StartUPS hasta compañias establecidas, personalizamos y optimizamos el servicio para cada uno.</p>
-    <div></div>
-    <h6>Experiencia en soporte IT</h6>
-    <button>Nuestra infraesructura completa</button>-->
 </div>
