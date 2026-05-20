@@ -14,12 +14,12 @@ export class NavBarButtons {
     {
       label: 'Log in',
       route: '/login',
-      estilos: 'px-12 py-3 bg-text text-bg font-semibold hover:bg-text-muted'
+      estilos: 'btn px-12 py-6 bg-text text-bg font-semibold text-lg hover:bg-text-muted '
     },
     {
       label: 'Registro',
       route: '/sign-up',
-      estilos: 'px-12 py-3 font-semibold hover:bg-bg'
+      estilos: 'btn px-12 py-6 font-semibold text-lg hover:bg-bg bg-bg-dark'
     }
   ]
 

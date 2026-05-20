@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { InfoCard } from '../info-card/info-card';
+import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
+
+
 
 @Component({
   selector: 'app-about-us-section',

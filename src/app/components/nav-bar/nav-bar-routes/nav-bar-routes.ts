@@ -15,18 +15,18 @@ export class NavBarRoutes {
     {
       label: 'ITSup',
       route: '/home',
-      estilos: 'p-4 font-extrabold text-4xl '
+      estilos: 'p-4 font-extrabold text-4xl  '
     },
     {
       label: 'Servicio',
       route: '/services-it',
-      estilos: 'p-4 font-semibold text-xl '
+      estilos: 'p-4 font-semibold text-xl btn btn-ghost bg-bg-dark rounded-xl'
 
     },
     {
       label: 'Contacto',
       route: '/contact',
-      estilos: 'p-4 font-semibold- text-xl'
+      estilos: 'p-4 font-semibold- text-xl btn btn-ghost bg-bg-dark rounded-xl'
     }
   ]
 
