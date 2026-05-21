@@ -1,0 +1,1 @@
+import{Aa as o,Pa as t,Qa as i,Sa as a,Ta as c}from"./chunk-VTWRXXDL.js";var f=["*"],r=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=o({type:n,selectors:[["app-info-card"]],ngContentSelectors:f,decls:2,vars:0,consts:[[1,""]],template:function(e,p){e&1&&(a(),t(0,"div",0),c(1),i())},encapsulation:2})};export{r as a};
