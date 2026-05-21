@@ -3,8 +3,6 @@ import { NavBarRoutes } from './nav-bar-routes/nav-bar-routes';
 import { NavBarButtons } from './nav-bar-buttons/nav-bar-buttons';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
-
-
 @Component({
   selector: 'app-nav-bar',
   imports: [NavBarRoutes, NavBarButtons, RouterLink, RouterLinkActive],
@@ -12,5 +10,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './nav-bar.css',
 })
 export class NavBar {
+  isMenuOpen = false;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
 }

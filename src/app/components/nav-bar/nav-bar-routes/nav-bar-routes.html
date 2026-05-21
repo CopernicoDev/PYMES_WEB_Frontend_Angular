@@ -1,6 +1,7 @@
-<nav class="grid grid-flow-col gap-40 items-center">
-    @for (item of menuOptions; track item.route) {
-    <a [routerLink]="item.route" routerLinkActive="active-link" class="nav-link {{item.estilos}}">
+<nav class="grid grid-flow-col gap-4 md:gap-20 lg:gap-40 items-center">
+    @for (item of menuOptions; track item.route; let idx = $index) {
+    <a [routerLink]="item.route" routerLinkActive="active-link"
+        class="nav-link {{item.estilos}} {{ idx > 0 ? 'hidden md:grid md:items-center md:justify-center h-auto min-h-0' : 'grid items-center justify-center' }}">
         {{item.label}}
     </a>
     }
