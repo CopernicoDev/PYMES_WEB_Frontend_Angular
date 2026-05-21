@@ -1,20 +1,22 @@
-<main class="w-full h-full grid grid-cols-2 content-center gap-x-20 gap-y-30 px-12 py-16 max-w-7xl mx-auto ">
+<main
+    class="w-full h-full grid grid-cols-1 md:grid-cols-2 content-center gap-6 md:gap-x-20 md:gap-y-30 px-4 py-8 md:px-12 md:py-16 max-w-7xl mx-auto">
 
     <app-info-card appAnimateOnScroll enterClass="animate-fade-in-down" [once]="true"
-        class="col-span-2 grid place-items-center text-center mb-25 ">
-        <h1 class="text-6xl font-bold">Tu infraestructura para PYMES</h1>
+        class="col-span-1 md:col-span-2 grid place-items-center text-center mb-10 md:mb-25">
+        <h1 class="text-4xl md:text-6xl font-bold">Tu infraestructura para PYMES</h1>
     </app-info-card>
 
     <app-info-card appAnimateOnScroll enterClass="animate-fade-in-left" [once]="true"
-        class="col-span-1 grid place-items-center text-center ">
-        <h2 class="text-2xl font-semibold">Soporte informático al alcance de tu mano</h2>
-        <h3 class="text-xl font-medium mt-2">Diseño preciso para tus necesidades</h3>
-        <button class="btn bg-text hover:bg-text-muted text-bg font-semibold text-lg py-5 px-50 rounded mt-10">Empieza
+        class="col-span-1 grid place-items-center text-center px-4 md:px-0">
+        <h2 class="text-xl md:text-2xl font-semibold">Soporte informático al alcance de tu mano</h2>
+        <h3 class="text-lg md:text-xl font-medium mt-2">Diseño preciso para tus necesidades</h3>
+        <button
+            class="btn bg-text hover:bg-text-muted text-bg font-semibold text-lg py-5 px-6 md:px-50 w-full md:w-auto rounded mt-8 md:mt-10">Empieza
             ahora</button>
     </app-info-card>
 
     <app-info-card appAnimateOnScroll enterClass="animate-fade-in-right" [once]="true"
-        class="col-span-1 bg-bg-light border border-border grid place-items-center text-center min-h-[350px]">
+        class="col-span-1 bg-bg-light border border-border grid place-items-center text-center min-h-[250px] md:min-h-[350px]">
         <p>Espacio derecho (Elemento 5)</p>
     </app-info-card>
 </main>

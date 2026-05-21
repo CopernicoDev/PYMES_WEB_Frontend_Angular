@@ -1,47 +1,49 @@
-<div class="grid grid-cols-1 w-full h-full mx-auto max-w-7xl gap-y-20 gap-x-10">
+<div class="grid grid-cols-1 w-full h-full mx-auto max-w-7xl gap-y-10 md:gap-y-20 gap-x-10 px-4 md:px-0">
 
-    <!-- 1. TÍTULO PRINCIPAL: Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+    <!-- 1. TÍTULO PRINCIPAL -->
     <app-info-card appAnimateOnScroll enterClass="animate-fade-in-down" leaveClass="animate-hidden"
-        class="animate-hidden col-span-1 grid place-items-center text-center mt-20 px-12">
-        <h1 class="text-3xl font-bold pb-8">Sobre nosotros</h1>
-        <h2 class="text-5xl font-bold pb-3">Optimiza tu infraesructura</h2>
-        <h3 class="text-xl font-medium">Empoderando negocios con infraesructura IT
-            adaptable para cualquier reto de esta
-            era digital
+        class="animate-hidden col-span-1 grid place-items-center text-center mt-10 md:mt-20 px-4 md:px-12">
+        <h1 class="text-2xl md:text-3xl font-bold pb-4 md:pb-8">Sobre nosotros</h1>
+        <h2 class="text-3xl md:text-5xl font-bold pb-3">Optimiza tu infraestructura</h2>
+        <h3 class="text-lg md:text-xl font-medium max-w-md md:max-w-none">
+            Empoderando negocios con infraestructura IT adaptable para cualquier reto de esta era digital
         </h3>
     </app-info-card>
 
-    <!-- 2. TARJETA CENTRAL: Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+    <!-- 2. TARJETA CENTRAL -->
     <app-info-card appAnimateOnScroll enterClass="animate-zoom-in" leaveClass="animate-hidden"
-        class="animate-hidden w-full border border-border grid place-items-center min-h-[450px]">
-        <p>Elemento 3: Imagen o video de fondo o texto sobre la infraestructura</p>
+        class="animate-hidden w-full border border-border grid place-items-center min-h-[250px] md:min-h-[450px]">
+        <p class="px-4 text-center">Elemento 3: Imagen o video de fondo o texto sobre la infraestructura</p>
     </app-info-card>
 
-    <!-- 3. FILA DE DOS COLUMNAS -->
-    <div class="w-full grid grid-cols-2 gap-x-10">
+    <!-- 3. FILA DE DOS COLUMNAS (Se apila en móvil) -->
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-0 gap-x-10">
 
-        <!-- Lado Izquierdo (Soluciones IT): Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+        <!-- Lado Izquierdo (Soluciones IT) -->
         <app-info-card appAnimateOnScroll enterClass="animate-fade-in-left" leaveClass="animate-hidden"
-            class="animate-hidden grid gap-4 pr-10">
-            <h4 class="text-3xl font-semibold pt-10">Soluciones IT</h4>
-            <h5 class="text-5xl font-bold w-3/4 pt-5">Soluciones especializadas para su negocio</h5>
-            <p class="text-2xl font-normal pt-5">Desde StartUPS hasta compañias establecidas, personalizamos y
-                optimizamos el servicio para cada uno.</p>
+            class="animate-hidden grid gap-4 pr-0 md:pr-10 text-center md:text-left">
+            <h4 class="text-2xl md:text-3xl font-semibold pt-6 md:pt-10">Soluciones IT</h4>
+            <h5 class="text-3xl md:text-5xl font-bold w-full md:w-3/4 pt-3 md:pt-5 mx-auto md:mx-0">Soluciones
+                especializadas para su negocio</h5>
+            <p class="text-lg md:text-2xl font-normal pt-3 md:pt-5">
+                Desde Startups hasta compañías establecidas, personalizamos y optimizamos el servicio para cada uno.
+            </p>
         </app-info-card>
 
-        <!-- Lado Derecho (Detalle): Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+        <!-- Lado Derecho (Detalle) -->
         <app-info-card appAnimateOnScroll enterClass="animate-fade-in-right" leaveClass="animate-hidden"
-            class="animate-hidden w-full border border-border grid place-items-center min-h-[450px]">
-            <p>Elemento 4: Imagen o video de fondo o texto sobre la infraestructura</p>
+            class="animate-hidden w-full border border-border grid place-items-center min-h-[250px] md:min-h-[450px]">
+            <p class="px-4 text-center">Elemento 4: Imagen o video de fondo o texto sobre la infraestructura</p>
         </app-info-card>
 
     </div>
 
-    <!-- 4. SECCIÓN INFERIOR: Cambiamos [once]="true" por leaveClass="animate-hidden" -->
+    <!-- 4. SECCIÓN INFERIOR -->
     <app-info-card appAnimateOnScroll enterClass="animate-fade-in-up" leaveClass="animate-hidden"
-        class="animate-hidden col-span-1 text-center grid place-items-center py-20">
-        <h6 class="text-5xl font-bold text-text mb-4 md:mb-0">Experiencia en soporte IT</h6>
-        <button class="btn bg-text hover:bg-text-muted text-bg font-semibold text-lg py-5 px-50 rounded mt-10">
+        class="animate-hidden col-span-1 text-center grid place-items-center py-10 md:py-20">
+        <h6 class="text-3xl md:text-5xl font-bold text-text mb-4">Experiencia en soporte IT</h6>
+        <button
+            class="btn bg-text hover:bg-text-muted text-bg font-semibold text-lg py-5 px-6 md:px-50 w-full md:w-auto rounded mt-8 md:mt-10">
             Nuestra infraestructura completa
         </button>
     </app-info-card>
