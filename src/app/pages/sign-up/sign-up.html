@@ -1,29 +1,32 @@
-<div class="grid grid-cols-1 text-center mt-20">
-    <h1 class="text-5xl font-extrabold">Registro</h1>
-    <h2 class="text-2xl font-semibold pl-5 pt-2.5">Registrate para acceder a nuestros servicios personalizados</h2>
-
+<div class="grid grid-cols-1 text-center mt-10 md:mt-20 px-4">
+    <h1 class="text-3xl md:text-5xl font-extrabold">Registro</h1>
+    <h2 class="text-lg md:text-2xl font-semibold pt-2.5">Regístrate para acceder a nuestros servicios personalizados
+    </h2>
 </div>
 
+<div class="grid grid-cols-1 w-full max-w-xl mt-6 md:mt-10 mx-auto px-4 md:px-10 place-items-center">
+    <div class="w-full h-full grid content-start gap-y-6 md:gap-y-10">
+        <app-input label="Correo" id="email" placeholder="Ingrese su correo" [control]="singUpForm.controls.email"
+            icon="email"></app-input>
 
-<div class="grid grid-cols-1 min-w-[40vw] max-w-[50vw] min-h-[50vh] max-h-[70vh] mt-10 mx-auto p-10 place-items-center">
-    <div class="min-w-[600px] h-full grid content-start gap-y-10 ">
-        <app-input label="Correo" id="email" placeholder="Ingrese su correo"
-            [control]="singUpForm.controls.email"></app-input>
         <app-input label="Contraseña" id="password" placeholder="Ingrese su contraseña"
-            [control]="singUpForm.controls.password" type="password"></app-input>
+            [control]="singUpForm.controls.password" type="password" icon="password"></app-input>
+
         <app-input label="Confirmar Contraseña" id="confirmPassword" placeholder="Confirme su contraseña"
-            [control]="singUpForm.controls.confirmPassword" type="password"></app-input>
+            [control]="singUpForm.controls.confirmPassword" type="password" icon="password"></app-input>
 
-        <!-- Contenedor general: Grid de 2 columnas -->
+
+        <!-- Contenedor general: Checkbox adaptable -->
         <div class="grid grid-cols-1 items-center w-full">
-
-            <!-- Lado Izquierdo: El checkbox y el texto (usando tu grid de antes) -->
             <label class="grid grid-cols-[auto_1fr] items-center gap-x-3 cursor-pointer w-max">
                 <input type="checkbox" checked="checked" class="checkbox" />
-                <span>Recuérdame</span>
+                <span class="text-sm md:text-base">Recuérdame</span>
             </label>
-            <!-- Lado Derecho: Fuera del label. 'justify-self-end' lo pega al extremo derecho -->
         </div>
-        <button class="bg-text hover:bg-text-muted text-bg font-semibold w-full rounded py-3">Registrarse</button>
+
+        <button
+            class="btn bg-text hover:bg-text-muted text-bg font-semibold text-lg w-full rounded py-3 transition-colors duration-200 h-auto min-h-0">
+            Registrarse
+        </button>
     </div>
 </div>
