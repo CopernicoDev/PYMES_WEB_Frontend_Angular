@@ -4,7 +4,8 @@
     </h2>
 </div>
 
-<div class="grid grid-cols-1 w-full max-w-xl mt-6 md:mt-10 mx-auto px-4 md:px-10 place-items-center">
+<div appAnimateOnScroll enterClass="animate-zoom-in" [once]="true"
+    class="grid grid-cols-1 w-full max-w-xl mt-6 md:mt-10 mx-auto px-4 md:px-10 place-items-center">
     <div class="w-full h-full grid content-start gap-y-6 md:gap-y-10">
         <app-input label="Correo" id="email" placeholder="Ingrese su correo" [control]="singUpForm.controls.email"
             icon="email"></app-input>

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Input } from "../../components/input/input";
+import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
 
 
 @Component({
   selector: 'app-sign-up',
-  imports: [Input],
+  imports: [Input, AnimateOnScrollDirective],
   templateUrl: './sign-up.html',
   styleUrl: './sign-up.css',
 })

@@ -1,6 +1,6 @@
 <main class="grid grid-cols-1 gap-y-6 md:gap-y-10 mt-10 md:mt-20 px-4">
     <!-- Plan 1 -->
-    <app-info-card
+    <app-info-card appAnimateOnScroll enterClass="animate-fade-in-right" [once]="true"
         class="grid w-full border border-border bg-bg-dark min-h-[350px] md:min-h-[420px] md:max-w-[70%] mx-auto rounded-2xl p-6 md:p-10">
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Plan 1: instalación +1 mes de soporte</h1>
         <h2 class="text-xl md:text-2xl font-semibold pl-2 md:pl-5 pt-4">Nuestro plan incluye:</h2>
@@ -17,7 +17,7 @@
     </app-info-card>
 
     <!-- Plan 2 -->
-    <app-info-card
+    <app-info-card appAnimateOnScroll enterClass="animate-fade-in-left" [once]="true"
         class="grid w-full border border-border bg-bg-light min-h-[350px] md:min-h-[420px] md:max-w-[70%] mx-auto rounded-2xl p-6 md:p-10">
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Plan 2: instalación +1 año de soporte</h1>
         <h2 class="text-xl md:text-2xl font-semibold pl-2 md:pl-5 pt-4">Nuestro plan 2 incluye:</h2>

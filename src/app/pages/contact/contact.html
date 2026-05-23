@@ -4,7 +4,7 @@
 </section>
 
 <!-- Cambiamos las columnas a proporciones fraccionales (1.5fr y 1fr) -->
-<div
+<div appAnimateOnScroll enterClass="animate-fade-in-left" [once]="true"
   class="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] w-full max-w-7xl mx-auto mt-6 md:mt-10 px-4 md:px-10 py-6 md:py-12 gap-10">
 
   <!-- Columna del Formulario: Centrado en móvil, alineado a la izquierda en desktop -->
@@ -30,7 +30,8 @@
   </div>
 
   <!-- Columna de la Imagen -->
-  <div class="border border-border bg-bg-dark grid place-content-center min-h-[250px] lg:min-h-0 rounded-2xl">
+  <div appAnimateOnScroll enterClass="animate-fade-in-right" [once]="true"
+    class="border border-border bg-bg-dark grid place-content-center min-h-[250px] lg:min-h-0 rounded-2xl">
     imagen
   </div>
 
