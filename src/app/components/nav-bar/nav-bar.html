@@ -1,16 +1,16 @@
 <nav
-    class="bg-bg-dark border border-border grid grid-cols-2 justify-between items-center md:min-w-[50vw] md:max-w-[50vw] md:min-h-[10vh] md:max-h-[10vh] min-w-[95vw] max-w-[95vw] min-h-[70px] md:mt-20 mt-4 px-6 md:px-12 relative rounded-2xl z-50">
+    class="grid grid-cols-2 items-center justify-between relative z-50 bg-bg-dark border border-border rounded-2xl mt-4 px-6 md:mt-20 md:px-12 max-w-[95vw] min-h-[70px] min-w-[95vw] md:max-h-[10vh] md:max-w-[50vw] md:min-h-[10vh] md:min-w-[50vw]">
 
     <!-- Enlaces / Logo -->
     <app-nav-bar-routes class="grid justify-self-start"></app-nav-bar-routes>
 
     <!-- Botones de Escritorio y Menú Hamburguesa Móvil -->
-    <div class="grid justify-self-end items-center grid-flow-col gap-4">
+    <div class="grid grid-flow-col items-center justify-self-end gap-4">
         <!-- Botones de Escritorio -->
         <app-nav-bar-buttons class="hidden md:grid"></app-nav-bar-buttons>
 
         <!-- Botón de Menú Móvil -->
-        <button (click)="toggleMenu()" class="btn btn-ghost md:hidden p-2 text-text hover:bg-bg focus:outline-none"
+        <button (click)="toggleMenu()" class="md:hidden text-text focus:outline-none hover:bg-bg p-2 btn btn-ghost"
             aria-label="Toggle Menu">
             @if (!isMenuOpen) {
             <!-- Icono de Hamburguesa -->
@@ -31,23 +31,23 @@
     <!-- Menú Desplegable Móvil -->
     @if (isMenuOpen) {
     <div
-        class="absolute top-[110%] left-0 w-full bg-bg-dark border border-border rounded-xl p-6 grid grid-cols-1 gap-4 shadow-lg md:hidden z-50">
+        class="absolute grid grid-cols-1 left-0 top-[110%] z-50 md:hidden bg-bg-dark border border-border rounded-xl shadow-lg gap-4 p-6 w-full">
         <!-- Enlaces Móviles -->
-        <div class="grid grid-cols-1 gap-2 text-center">
+        <div class="grid grid-cols-1 text-center gap-2">
             <a routerLink="/services-it" (click)="closeMenu()"
-                class="p-3 font-semibold text-lg btn btn-ghost rounded-xl text-text hover:bg-bg w-full">Servicio</a>
+                class="font-semibold rounded-xl text-lg text-text hover:bg-bg p-3 btn btn-ghost w-full">Servicio</a>
             <a routerLink="/contact" (click)="closeMenu()"
-                class="p-3 font-semibold text-lg btn btn-ghost rounded-xl text-text hover:bg-bg w-full">Contacto</a>
+                class="font-semibold rounded-xl text-lg text-text hover:bg-bg p-3 btn btn-ghost w-full">Contacto</a>
         </div>
         <!-- Divisor -->
-        <div class="border-t border-border my-1"></div>
+        <div class="border-border border-t my-1"></div>
         <!-- Botones Móviles -->
         <div class="grid grid-cols-1 gap-3">
             <a routerLink="/login" (click)="closeMenu()"
-                class="btn w-full py-4 bg-text text-bg font-semibold text-lg hover:bg-text-muted rounded-xl text-center">Log
+                class="bg-text font-semibold rounded-xl text-bg text-center text-lg hover:bg-text-muted py-4 btn w-full">Log
                 in</a>
             <a routerLink="/sign-up" (click)="closeMenu()"
-                class="btn w-full py-4 font-semibold text-lg hover:bg-bg bg-bg-dark border border-border rounded-xl text-center text-text">Registro</a>
+                class="bg-bg-dark border border-border font-semibold rounded-xl text-center text-lg text-text hover:bg-bg py-4 btn w-full">Registro</a>
         </div>
     </div>
     }

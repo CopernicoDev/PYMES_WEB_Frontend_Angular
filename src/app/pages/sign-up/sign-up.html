@@ -1,12 +1,12 @@
-<div class="grid grid-cols-1 text-center mt-10 md:mt-20 px-4">
-    <h1 class="text-3xl md:text-5xl font-extrabold">Registro</h1>
-    <h2 class="text-lg md:text-2xl font-semibold pt-2.5">Regístrate para acceder a nuestros servicios personalizados
+<div class="grid grid-cols-1 text-center mt-10 px-4 md:mt-20">
+    <h1 class="font-extrabold text-3xl md:text-5xl">Registro</h1>
+    <h2 class="font-semibold text-lg md:text-2xl pt-2.5">Regístrate para acceder a nuestros servicios personalizados
     </h2>
 </div>
 
 <div appAnimateOnScroll enterClass="animate-zoom-in" [once]="true"
-    class="grid grid-cols-1 w-full max-w-xl mt-6 md:mt-10 mx-auto px-4 md:px-10 place-items-center">
-    <div class="w-full h-full grid content-start gap-y-6 md:gap-y-10">
+    class="grid grid-cols-1 place-items-center mt-6 mx-auto px-4 md:mt-10 md:px-10 max-w-xl w-full">
+    <div class="content-start grid gap-y-6 md:gap-y-10 h-full w-full">
         <app-input label="Correo" id="email" placeholder="Ingrese su correo" [control]="singUpForm.controls.email"
             icon="email"></app-input>
 
@@ -26,7 +26,7 @@
         </div>
 
         <button
-            class="btn bg-text hover:bg-text-muted text-bg font-semibold text-lg w-full rounded py-3 transition-colors duration-200 h-auto min-h-0 mb-5">
+            class="bg-text font-semibold rounded text-bg text-lg hover:bg-text-muted mb-5 py-3 btn duration-200 h-auto min-h-0 transition-colors w-full">
             Registrarse
         </button>
     </div>

@@ -1,11 +1,11 @@
-<div class="grid grid-cols-1 text-center mt-10 md:mt-20 px-4">
-  <h1 class="text-3xl md:text-5xl font-extrabold">Login</h1>
-  <h2 class="text-lg md:text-2xl font-semibold pt-2.5">Conéctate para acceder a nuestros servicios personalizados</h2>
+<div class="grid grid-cols-1 text-center mt-10 px-4 md:mt-20">
+  <h1 class="font-extrabold text-3xl md:text-5xl">Login</h1>
+  <h2 class="font-semibold text-lg md:text-2xl pt-2.5">Conéctate para acceder a nuestros servicios personalizados</h2>
 </div>
 
 <div appAnimateOnScroll enterClass="animate-zoom-in" [once]="true"
-  class="grid grid-cols-1 w-full max-w-xl mt-6 md:mt-10 mx-auto px-4 md:px-10 place-items-center">
-  <div class="w-full h-full grid content-start gap-y-6 md:gap-y-10">
+  class="grid grid-cols-1 place-items-center mt-6 mx-auto px-4 md:mt-10 md:px-10 max-w-xl w-full">
+  <div class="content-start grid gap-y-6 md:gap-y-10 h-full w-full">
     <app-input label="Correo" id="email" placeholder="Ingrese su correo" [control]="loginForm.controls.email"
       icon="email"></app-input>
 
@@ -14,7 +14,7 @@
 
 
     <!-- Contenedor general: Grid de 2 columnas alineado horizontalmente siempre -->
-    <div class="grid grid-cols-2 items-center w-full text-xs sm:text-sm md:text-base gap-2">
+    <div class="grid grid-cols-2 items-center text-xs sm:text-sm md:text-base gap-2 w-full">
       <!-- Lado Izquierdo: El checkbox -->
       <label class="grid grid-cols-[auto_1fr] items-center gap-x-2 cursor-pointer w-max">
         <input type="checkbox" checked="checked" class="checkbox checkbox-sm md:checkbox-md" />
@@ -28,7 +28,7 @@
     </div>
 
     <button
-      class="btn bg-text hover:bg-text-muted text-bg font-semibold text-lg w-full rounded py-3 transition-colors duration-200 h-auto min-h-0">
+      class="bg-text font-semibold rounded text-bg text-lg hover:bg-text-muted py-3 btn duration-200 h-auto min-h-0 transition-colors w-full">
       Login
     </button>
   </div>
