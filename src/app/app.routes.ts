@@ -31,6 +31,31 @@ export const routes: Routes = [
 		]
 	},
 	{
+		path: 'dashboard',
+		loadComponent: () => import('./layouts/private-layout/private-layout'),
+		// canActivate: [authGuard], // <-- Más adelante protegerás esto con un Guard de autenticación
+		children: [
+			{
+				path: 'desktop', // URL: /dashboard/desktop
+				loadComponent: () => import('./pages/dashboard/desktop/desktop')
+			},
+			{
+				path: 'tickets', // URL: /dashboard/tickets
+				loadComponent: () => import('./pages/dashboard/tickets/tickets')
+			},
+			{
+				path: 'profile', // URL: /dashboard/profile
+				loadComponent: () => import('./pages/dashboard/profile/profile')
+			},
+			{
+				path: '',
+				redirectTo: 'desktop',
+				pathMatch: 'full'
+			}
+		]
+	},
+
+	{
 		path: '**',
 		redirectTo: 'home'
 	}
