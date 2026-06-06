@@ -1,0 +1,1 @@
+import{Ca as i,Ta as n,Ua as r,db as e}from"./chunk-TXV4JEJK.js";var a=class o{static \u0275fac=function(t){return new(t||o)};static \u0275cmp=i({type:o,selectors:[["app-private-layout"]],decls:3,vars:0,template:function(t,u){t&1&&(n(0,"p"),e(1,"private-layout works!"),r(),e(2,","))},encapsulation:2,changeDetection:0})};export{a as default};
