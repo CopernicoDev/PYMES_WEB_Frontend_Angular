@@ -1,7 +1,23 @@
+<!-- 
+  🏠 Vista de la Página Home
+  
+  Angular fomenta la "Composición de Componentes". En lugar de tener un HTML 
+  gigante de 1000 líneas, divides la página en pequeños bloques reutilizables.
+-->
 <section class="grid grid-cols-1 bg-bg text-text gap-4 min-h-screen w-full">
 
+    <!-- 
+      Este es el componente Hero (la portada). 
+      El selector <app-hero-section> lo definiste en hero-section.ts. 
+      Al usarlo aquí, Angular inyecta todo el HTML y CSS del Hero en este punto.
+    -->
     <app-hero-section class="min-h-[70vh] w-full"></app-hero-section>
 
+    <!-- 
+      Este es el componente "Sobre Nosotros".
+      Nota cómo le aplicamos clases de Tailwind (bg-bg-dark) directamente 
+      a la etiqueta del componente para afectar su contenedor exterior.
+    -->
     <app-about-us-section class="bg-bg-dark min-h-[70vh] w-full"></app-about-us-section>
 
 </section>

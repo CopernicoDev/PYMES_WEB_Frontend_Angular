@@ -1,3 +1,9 @@
+/* ── 🌬️ Tailwind CSS y DaisyUI ── */
+/* 
+  Estas dos directivas importan el núcleo de TailwindCSS (el framework de utilidades CSS)
+  y el plugin de DaisyUI (que nos da componentes pre-diseñados como botones, tarjetas, etc).
+  Tailwind v4 utiliza @import en lugar de las antiguas directivas @tailwind.
+*/
 @import "tailwindcss";
 @plugin "daisyui";
 
