@@ -1,3 +1,4 @@
+<!-- src/app/pages/sign-up/sign-up.html -->
 <div class="grid grid-cols-1 text-center mt-10 px-4 md:mt-20">
     <h1 class="font-extrabold text-3xl md:text-5xl">Registro</h1>
     <h2 class="font-semibold text-lg md:text-2xl pt-2.5">Regístrate para acceder a nuestros servicios personalizados
@@ -6,7 +7,13 @@
 
 <div appAnimateOnScroll enterClass="animate-zoom-in" [once]="true"
     class="grid grid-cols-1 place-items-center mt-6 mx-auto px-4 md:mt-10 md:px-10 max-w-xl w-full">
-    <div class="content-start grid gap-y-6 md:gap-y-10 h-full w-full">
+
+    <!-- (ngSubmit) conecta el botón submit con el método onSubmit() del componente -->
+    <form [formGroup]="singUpForm" (ngSubmit)="onSubmit()" class="content-start grid gap-y-6 md:gap-y-8 h-full w-full">
+
+        <app-input label="Nombre de usuario" id="username" placeholder="Ingrese su nombre de usuario"
+            [control]="singUpForm.controls.username" icon="person"></app-input>
+
         <app-input label="Correo" id="email" placeholder="Ingrese su correo" [control]="singUpForm.controls.email"
             icon="email"></app-input>
 
@@ -16,18 +23,29 @@
         <app-input label="Confirmar Contraseña" id="confirmPassword" placeholder="Confirme su contraseña"
             [control]="singUpForm.controls.confirmPassword" type="password" icon="password"></app-input>
 
-
-        <!-- Contenedor general: Checkbox adaptable -->
-        <div class="grid grid-cols-1 items-center w-full">
-            <label class="grid grid-cols-[auto_1fr] items-center gap-x-3 cursor-pointer w-max">
-                <input type="checkbox" checked="checked" class="checkbox" />
-                <span class="text-sm md:text-base">Recuérdame</span>
-            </label>
+        <!-- Mensaje de error (se muestra solo si hay un error) -->
+        @if (errorMessage) {
+        <div class="text-red-400 text-sm text-center bg-red-950/30 border border-red-800/50 rounded-lg p-3">
+            {{ errorMessage }}
         </div>
+        }
 
-        <button
-            class="bg-text font-semibold rounded text-bg text-lg hover:bg-text-muted mb-5 py-3 btn duration-200 h-auto min-h-0 transition-colors w-full">
-            Registrarse
+        <!-- Mensaje de éxito (se muestra solo si el registro fue exitoso) -->
+        @if (successMessage) {
+        <div class="text-green-400 text-sm text-center bg-green-950/30 border border-green-800/50 rounded-lg p-3">
+            {{ successMessage }}
+        </div>
+        }
+
+        <!-- Botón que activa (ngSubmit). Muestra "Cargando..." mientras espera al backend. -->
+        <button type="submit" [disabled]="isLoading"
+            class="bg-text font-semibold rounded text-bg text-lg hover:bg-text-muted mb-5 py-3 btn duration-200 h-auto min-h-0 transition-colors w-full disabled:opacity-50 disabled:cursor-not-allowed">
+            @if (isLoading) { Registrando... } @else { Registrarse }
         </button>
-    </div>
+
+        <p class="text-center text-sm text-text-muted mb-5">
+            ¿Ya tienes cuenta? <a routerLink="/login" class="text-primary hover:underline">Inicia sesión</a>
+        </p>
+
+    </form>
 </div>
